@@ -1,0 +1,960 @@
+{
+    "TIA": [
+        "Tirana"
+    ],
+    "EVN": [
+        "Yerevan"
+    ],
+    "VIE": [
+        "Vienna",
+        "Vienna\r\n"
+    ],
+    "GYD": [
+        "Baku"
+    ],
+    "GBB": [
+        "Gabala"
+    ],
+    "CRL": [
+        "Brussels Charleroi"
+    ],
+    "BNX": [
+        "Banja Luka"
+    ],
+    "SJJ": [
+        "Sarajevo"
+    ],
+    "TZL": [
+        "Tuzla"
+    ],
+    "BOJ": [
+        "Burgas",
+        "Bourgas (Black Sea)"
+    ],
+    "PDV": [
+        "Plovdiv"
+    ],
+    "SOF": [
+        "Sofia"
+    ],
+    "VAR": [
+        "Varna",
+        "Varna (Black Sea)"
+    ],
+    "DBV": [
+        "Dubrovnik"
+    ],
+    "SPU": [
+        "Split"
+    ],
+    "LCA": [
+        "Larnaca"
+    ],
+    "PRG": [
+        "Prague"
+    ],
+    "BLL": [
+        "Billund"
+    ],
+    "CPH": [
+        "Copenhagen"
+    ],
+    "HBE": [
+        "Alexandria (Borg El Arab)"
+    ],
+    "SPX": [
+        "Cairo (Sphinx)"
+    ],
+    "HRG": [
+        "Hurghada"
+    ],
+    "RMF": [
+        "Marsa Alam\r\n"
+    ],
+    "SSH": [
+        "Sharm El Sheikh\r\n"
+    ],
+    "HMB": [
+        "Sohag "
+    ],
+    "TLL": [
+        "Tallinn"
+    ],
+    "TKU": [
+        "Turku"
+    ],
+    "MLH": [
+        "Basel-Mulhouse-Freiburg"
+    ],
+    "GNB": [
+        "Grenoble"
+    ],
+    "LYS": [
+        "Lyon\r\n"
+    ],
+    "NCE": [
+        "Nice"
+    ],
+    "PAR": [
+        "Paris (Any)"
+    ],
+    "BVA": [
+        "Paris Beauvais"
+    ],
+    "ORY": [
+        "Paris Orly"
+    ],
+    "KUT": [
+        "Kutaisi"
+    ],
+    "BER": [
+        "Berlin Brandenburg",
+        "Berlin Brandenburg\r\n"
+    ],
+    "DTM": [
+        "Dortmund"
+    ],
+    "HHN": [
+        "Frankfurt Hahn"
+    ],
+    "FDH": [
+        "Friedrichshafen"
+    ],
+    "HAM": [
+        "Hamburg"
+    ],
+    "FKB": [
+        "Karlsruhe / Baden-Baden",
+        "Karlsruhe/Baden-Baden"
+    ],
+    "LEJ": [
+        "Leipzig"
+    ],
+    "FMM": [
+        "Memmingen",
+        "Memmingen / Munich West"
+    ],
+    "NUE": [
+        "Nuremberg ",
+        "Nuremberg"
+    ],
+    "STR": [
+        "Stuttgart"
+    ],
+    "ATH": [
+        "Athens",
+        "Athens\r\n"
+    ],
+    "CHQ": [
+        "Chania",
+        "Chania (Crete)"
+    ],
+    "CFU": [
+        "Corfu"
+    ],
+    "HER": [
+        "Heraklion (Crete)",
+        "Heraklion Crete"
+    ],
+    "JMK": [
+        "Mykonos"
+    ],
+    "RHO": [
+        "Rhodes"
+    ],
+    "JTR": [
+        "Santorini"
+    ],
+    "JSI": [
+        "Skiathos\r\n",
+        "Skiathos"
+    ],
+    "SKG": [
+        "Thessaloniki"
+    ],
+    "ZTH": [
+        "Zakynthos"
+    ],
+    "BUD": [
+        "Budapest"
+    ],
+    "DEB": [
+        "Debrecen"
+    ],
+    "KEF": [
+        "Reykjavik"
+    ],
+    "TLV": [
+        "Tel Aviv",
+        "Tel-Aviv"
+    ],
+    "AHO": [
+        "Alghero (Sardinia)",
+        "Alghero"
+    ],
+    "AOI": [
+        "Ancona"
+    ],
+    "BRI": [
+        "Bari"
+    ],
+    "BLQ": [
+        "Bologna"
+    ],
+    "CTA": [
+        "Catania (Sicily)",
+        "Catania"
+    ],
+    "CIY": [
+        "Comiso"
+    ],
+    "GOA": [
+        "Genoa"
+    ],
+    "LMP": [
+        "Lampedusa"
+    ],
+    "MIL": [
+        "Milan (Any)"
+    ],
+    "BGY": [
+        "Milan Bergamo"
+    ],
+    "MXP": [
+        "Milan Malpensa"
+    ],
+    "NAP": [
+        "Naples"
+    ],
+    "CAM": [
+        "Naples (Any)"
+    ],
+    "OLB": [
+        "Olbia (Sardinia)",
+        "Olbia"
+    ],
+    "PEG": [
+        "Perugia"
+    ],
+    "PSR": [
+        "Pescara"
+    ],
+    "PSA": [
+        "Pisa",
+        "Pisa (Tuscany)"
+    ],
+    "RMI": [
+        "Rimini",
+        "Rimini\r\n"
+    ],
+    "ROM": [
+        "Rome (Any)"
+    ],
+    "CIA": [
+        "Rome Ciampino"
+    ],
+    "FCO": [
+        "Rome Fiumicino"
+    ],
+    "QSR": [
+        "Salerno (Naples)",
+        "Salerno Costa d'Amalfi"
+    ],
+    "TRS": [
+        "Trieste",
+        "Trieste\r\n"
+    ],
+    "TRN": [
+        "Turin"
+    ],
+    "VCE": [
+        "Venice M.Polo",
+        "Venice"
+    ],
+    "VEN": [
+        "Venice (Any)"
+    ],
+    "TSF": [
+        "Venice Treviso"
+    ],
+    "VRN": [
+        "Verona"
+    ],
+    "AMM": [
+        "Amman Jordan",
+        "Amman\r\n"
+    ],
+    "ALA": [
+        "Almaty "
+    ],
+    "NQZ": [
+        "Astana\r\n"
+    ],
+    "HSA": [
+        "Turkistan"
+    ],
+    "PRN": [
+        "Prishtina"
+    ],
+    "FRU": [
+        "Bishkek\r\n"
+    ],
+    "RIX": [
+        "Riga"
+    ],
+    "BEY": [
+        "Beirut"
+    ],
+    "KUN": [
+        "Kaunas"
+    ],
+    "VNO": [
+        "Vilnius"
+    ],
+    "MLA": [
+        "Malta"
+    ],
+    "RMO": [
+        "Chisinau"
+    ],
+    "TGD": [
+        "Podgorica"
+    ],
+    "AGA": [
+        "Agadir"
+    ],
+    "RAK": [
+        "Marrakesh",
+        "Marrakesh\r\n"
+    ],
+    "EIN": [
+        "Eindhoven"
+    ],
+    "MST": [
+        "Maastricht"
+    ],
+    "OHD": [
+        "Ohrid"
+    ],
+    "SKP": [
+        "Skopje"
+    ],
+    "AES": [
+        "Alesund"
+    ],
+    "BGO": [
+        "Bergen"
+    ],
+    "HAU": [
+        "Haugesund"
+    ],
+    "OOS": [
+        "Oslo (Any)\r\n"
+    ],
+    "OSL": [
+        "Oslo",
+        "Oslo Gardermoen"
+    ],
+    "TRF": [
+        "Oslo Torp",
+        "Oslo Sandefjord Torp"
+    ],
+    "SVG": [
+        "Stavanger"
+    ],
+    "TOS": [
+        "Tromso\r\n"
+    ],
+    "TRD": [
+        "Trondheim"
+    ],
+    "SLL": [
+        "Salalah\r\n"
+    ],
+    "GDN": [
+        "Gdansk"
+    ],
+    "KTW": [
+        "Katowice"
+    ],
+    "KRK": [
+        "Kraków\r\n",
+        "Krakow"
+    ],
+    "LUZ": [
+        "Lublin"
+    ],
+    "POZ": [
+        "Poznan"
+    ],
+    "RDO": [
+        "Radom"
+    ],
+    "RZE": [
+        "Rzeszow",
+        "Rzeszów\r\n"
+    ],
+    "SZZ": [
+        "Szczecin"
+    ],
+    "WAW": [
+        "Warsaw Chopin"
+    ],
+    "WRO": [
+        "Wroclaw"
+    ],
+    "FAO": [
+        "Faro (Algarve)",
+        "Faro"
+    ],
+    "FNC": [
+        "Madeira Funchal",
+        "Funchal (Madeira)"
+    ],
+    "LIS": [
+        "Lisbon"
+    ],
+    "OPO": [
+        "Porto"
+    ],
+    "BCM": [
+        "Bacau"
+    ],
+    "GHV": [
+        "Brasov"
+    ],
+    "OTP": [
+        "Bucharest",
+        "Bucharest "
+    ],
+    "BBU": [
+        "Bucharest Baneasa"
+    ],
+    "CLJ": [
+        "Cluj",
+        "Cluj-Napoca"
+    ],
+    "CND": [
+        "Constanta"
+    ],
+    "CRA": [
+        "Craiova"
+    ],
+    "IAS": [
+        "Iasi"
+    ],
+    "SUJ": [
+        "Satu Mare"
+    ],
+    "SBZ": [
+        "Sibiu"
+    ],
+    "SCV": [
+        "Suceava"
+    ],
+    "TSR": [
+        "Timisoara"
+    ],
+    "TGM": [
+        "Tirgu Mures"
+    ],
+    "DMM": [
+        "Dammam"
+    ],
+    "JED": [
+        "Jeddah\r\n"
+    ],
+    "MED": [
+        "Medina (Madinah)"
+    ],
+    "BEG": [
+        "Belgrade"
+    ],
+    "INI": [
+        "Niš",
+        "Nis"
+    ],
+    "BTS": [
+        "Bratislava"
+    ],
+    "KSC": [
+        "Kosice"
+    ],
+    "TAT": [
+        "Poprad-Tatry",
+        "Poprad - Tatry (Tatra Mountains)"
+    ],
+    "LJU": [
+        "Ljubljana"
+    ],
+    "ALC": [
+        "Alicante"
+    ],
+    "BCN": [
+        "Barcelona",
+        "Barcelona El Prat"
+    ],
+    "GRO": [
+        "Barcelona Girona"
+    ],
+    "BIO": [
+        "Bilbao"
+    ],
+    "CDT": [
+        "Castellon (Valencia)"
+    ],
+    "FUE": [
+        "Fuerteventura (Canary Islands)",
+        "Fuerteventura"
+    ],
+    "LPA": [
+        "Gran Canaria (Canary Islands)\r\n",
+        "Gran Canaria"
+    ],
+    "IBZ": [
+        "Ibiza"
+    ],
+    "MAD": [
+        "Madrid"
+    ],
+    "AGP": [
+        "Malaga"
+    ],
+    "PMI": [
+        "Palma de Mallorca"
+    ],
+    "SDR": [
+        "Santander"
+    ],
+    "SVQ": [
+        "Seville"
+    ],
+    "TFS": [
+        "Tenerife South",
+        "Tenerife (Canary Islands)"
+    ],
+    "VLC": [
+        "Valencia"
+    ],
+    "ZAZ": [
+        "Zaragoza"
+    ],
+    "GOT": [
+        "Gothenburg Landvetter",
+        "Göteborg Landvetter"
+    ],
+    "MMX": [
+        "Malmo"
+    ],
+    "ARN": [
+        "Stockholm",
+        "Stockholm Arlanda"
+    ],
+    "STO": [
+        "Stockholm Any"
+    ],
+    "NYO": [
+        "Stockholm Skavsta"
+    ],
+    "BSL": [
+        "Basel",
+        "Basel-Mulhouse-Freiburg"
+    ],
+    "AYT": [
+        "Antalya"
+    ],
+    "DLM": [
+        "Dalaman"
+    ],
+    "IST": [
+        "Istanbul\r\n"
+    ],
+    "AUH": [
+        "Abu Dhabi"
+    ],
+    "DXB": [
+        "Dubai \r\n"
+    ],
+    "ABZ": [
+        "Aberdeen"
+    ],
+    "BHX": [
+        "Birmingham"
+    ],
+    "GLA": [
+        "Glasgow"
+    ],
+    "LBA": [
+        "Leeds Bradford",
+        "Leeds"
+    ],
+    "LPL": [
+        "Liverpool"
+    ],
+    "LON": [
+        "London (Any)"
+    ],
+    "LTN": [
+        "London Luton"
+    ],
+    "LGW": [
+        "London Gatwick"
+    ],
+    "SKD": [
+        "Samarkand"
+    ],
+    "TAS": [
+        "Tashkent"
+    ],
+    "AAR": [
+        "Aarhus"
+    ],
+    "ACE": [
+        "Lanzarote"
+    ],
+    "AMS": [
+        "Amsterdam"
+    ],
+    "BDS": [
+        "Brindisi"
+    ],
+    "BEM": [
+        "Beni Mellal"
+    ],
+    "BFS": [
+        "Belfast International"
+    ],
+    "BIQ": [
+        "Biarritz"
+    ],
+    "BJV": [
+        "Bodrum"
+    ],
+    "BOH": [
+        "Bournemouth"
+    ],
+    "BRE": [
+        "Bremen"
+    ],
+    "BRQ": [
+        "Brno"
+    ],
+    "BRS": [
+        "Bristol"
+    ],
+    "BRU": [
+        "Brussels"
+    ],
+    "BVE": [
+        "Brive"
+    ],
+    "BZG": [
+        "Bydgoszcz"
+    ],
+    "BZR": [
+        "Beziers Cap d'Agde"
+    ],
+    "CAG": [
+        "Cagliari"
+    ],
+    "CCF": [
+        "Carcassonne"
+    ],
+    "CFE": [
+        "Clermont"
+    ],
+    "CGN": [
+        "Cologne"
+    ],
+    "CRV": [
+        "Crotone"
+    ],
+    "CUF": [
+        "Cuneo"
+    ],
+    "CWL": [
+        "Cardiff"
+    ],
+    "DLE": [
+        "Dole"
+    ],
+    "DUB": [
+        "Dublin"
+    ],
+    "EDI": [
+        "Edinburgh"
+    ],
+    "EFL": [
+        "Kefalonia"
+    ],
+    "EGC": [
+        "Bergerac"
+    ],
+    "EMA": [
+        "East Midlands"
+    ],
+    "ERH": [
+        "Errachidia"
+    ],
+    "ESU": [
+        "Essaouira"
+    ],
+    "EXT": [
+        "Exeter"
+    ],
+    "FEZ": [
+        "Fez"
+    ],
+    "FMO": [
+        "Münster"
+    ],
+    "FNI": [
+        "Nimes"
+    ],
+    "FRL": [
+        "Bologna Forli"
+    ],
+    "FSC": [
+        "Figari-Corsica"
+    ],
+    "GPA": [
+        "Patras"
+    ],
+    "HEL": [
+        "Helsinki"
+    ],
+    "KGS": [
+        "Kos"
+    ],
+    "KIR": [
+        "Kerry"
+    ],
+    "KLU": [
+        "Klagenfurt"
+    ],
+    "KLX": [
+        "Kalamata"
+    ],
+    "LBC": [
+        "Lubeck"
+    ],
+    "LCJ": [
+        "Lodz"
+    ],
+    "LDE": [
+        "Lourdes–Pyrenees"
+    ],
+    "LDY": [
+        "Derry"
+    ],
+    "LEI": [
+        "Almeria"
+    ],
+    "LIG": [
+        "Limoges"
+    ],
+    "LIL": [
+        "Lille"
+    ],
+    "LNZ": [
+        "Linz"
+    ],
+    "LPP": [
+        "Lappeenranta"
+    ],
+    "LRH": [
+        "La Rochelle"
+    ],
+    "LUX": [
+        "Luxembourg"
+    ],
+    "LXS": [
+        "Lemnos"
+    ],
+    "MAH": [
+        "Menorca"
+    ],
+    "MAN": [
+        "Manchester"
+    ],
+    "MME": [
+        "Teesside"
+    ],
+    "MRS": [
+        "Marseille"
+    ],
+    "NCL": [
+        "Newcastle"
+    ],
+    "NDR": [
+        "Nador"
+    ],
+    "NOC": [
+        "Knock"
+    ],
+    "NQY": [
+        "Newquay Cornwall"
+    ],
+    "NRN": [
+        "Dusseldorf Weeze"
+    ],
+    "NTE": [
+        "Nantes"
+    ],
+    "NWI": [
+        "Norwich"
+    ],
+    "ORB": [
+        "Örebro"
+    ],
+    "ORK": [
+        "Cork"
+    ],
+    "OSI": [
+        "Osijek"
+    ],
+    "OSR": [
+        "Ostrava"
+    ],
+    "OUD": [
+        "Oujda"
+    ],
+    "OVD": [
+        "Asturias"
+    ],
+    "OZZ": [
+        "Ouarzazate"
+    ],
+    "PAD": [
+        "Paderborn"
+    ],
+    "PDL": [
+        "Ponta Delgada"
+    ],
+    "PED": [
+        "Pardubice"
+    ],
+    "PFO": [
+        "Paphos"
+    ],
+    "PGF": [
+        "Perpignan"
+    ],
+    "PIK": [
+        "Glasgow Prestwick"
+    ],
+    "PIS": [
+        "Poitiers"
+    ],
+    "PLQ": [
+        "Palanga"
+    ],
+    "PMF": [
+        "Parma"
+    ],
+    "PMO": [
+        "Palermo"
+    ],
+    "PUY": [
+        "Pula"
+    ],
+    "PVK": [
+        "Preveza - Aktion"
+    ],
+    "RBA": [
+        "Rabat"
+    ],
+    "RDZ": [
+        "Rodez"
+    ],
+    "REG": [
+        "Reggio Calabria"
+    ],
+    "REU": [
+        "Barcelona Reus"
+    ],
+    "RJK": [
+        "Rijeka"
+    ],
+    "RMU": [
+        "Murcia International"
+    ],
+    "RVN": [
+        "Lapland Rovaniemi"
+    ],
+    "SCQ": [
+        "Santiago"
+    ],
+    "SFT": [
+        "Skelleftea"
+    ],
+    "SNN": [
+        "Shannon"
+    ],
+    "STN": [
+        "London Stansted"
+    ],
+    "SUF": [
+        "Lamezia"
+    ],
+    "SXB": [
+        "Strasbourg"
+    ],
+    "SZG": [
+        "Salzburg"
+    ],
+    "SZY": [
+        "Olsztyn - Mazury"
+    ],
+    "TER": [
+        "Terceira Lajes"
+    ],
+    "TFN": [
+        "Tenerife North"
+    ],
+    "TLS": [
+        "Toulouse"
+    ],
+    "TNG": [
+        "Tangier"
+    ],
+    "TPS": [
+        "Trapani-Marsala"
+    ],
+    "TTU": [
+        "Tétouan"
+    ],
+    "TUF": [
+        "Tours Loire Valley"
+    ],
+    "VGO": [
+        "Vigo"
+    ],
+    "VIL": [
+        "Dakhla "
+    ],
+    "VIT": [
+        "Vitoria (Basque Country)"
+    ],
+    "VOL": [
+        "Volos"
+    ],
+    "VST": [
+        "Stockholm Västerås"
+    ],
+    "VXO": [
+        "Växjö Småland"
+    ],
+    "WMI": [
+        "Warsaw Modlin"
+    ],
+    "XCR": [
+        "Paris Vatry"
+    ],
+    "ZAD": [
+        "Zadar"
+    ],
+    "ZAG": [
+        "Zagreb"
+    ]
+}
