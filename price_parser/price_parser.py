@@ -5,10 +5,9 @@ from typing import List, Dict
 import torch
 import torch.nn.functional as F
 import json
-import calendar
 
 
-class DateClassifier:
+class PriceParser:
     def __init__(self):
         self.path: str = os.path.dirname(__file__)
         self.model: AutoModelForTokenClassification | None = None
@@ -22,58 +21,7 @@ class DateClassifier:
         return os.path.join(self.path, 'datasets')
 
     def create_tokens(self):
-        # List of months in Russian
-        months_in_russian = [
-            "января", "февраля", "марта", "апреля", "мая", "июня",
-            "июля", "августа", "сентября", "октября", "ноября", "декабря"
-        ]
-        dates = []
-        for month in range(1, 13):  # Loop through months 1 to 12
-            days_in_month = calendar.monthrange(2024, month)[1]  # Get the number of days in the month
-            for day in range(1, days_in_month + 1):
-                dates.append(f"{day} {months_in_russian[month - 1]}")
-        return dates
-
-    def replace_texts_with_numbers(self, text):
-        # Инициализация моделей
-
-        # Таблица для преобразования числительных
-        NUMBERS = {
-            "первого": 1, "второго": 2, "третьего": 3, "четвёртого": 4, "пятого": 5,
-            "шестого": 6, "седьмого": 7, "восьмого": 8, "девятого": 9, "десятого": 10,
-            "одиннадцатого": 11, "двенадцатого": 12, "тринадцатого": 13, "четырнадцатого": 14,
-            "пятнадцатого": 15, "шестнадцатого": 16, "семнадцатого": 17, "восемнадцатого": 18,
-            "девятнадцатого": 19, "двадцатого": 20, "двадцать первого": 21, "двадцать второго": 22,
-            "двадцать третьего": 23, "двадцать четвёртого": 24, "двадцать пятого": 25,
-            "двадцать шестого": 26, "двадцать седьмого": 27, "двадцать восьмого": 28,
-            "двадцать девятого": 29, "тридцатого": 30, "тридцать первого": 31
-        }
-
-        tokens = text.split()
-        new_tokens = []
-
-        i = 0
-        while i < len(tokens):
-            token = tokens[i]
-            num_phrase = token
-
-            # Проверяем составные числительные (два слова подряд)
-            if i < len(tokens) - 1:
-                num_phrase = f"{tokens[i]} {tokens[i + 1]}"
-                if num_phrase in NUMBERS:
-                    new_tokens.append(str(NUMBERS[num_phrase]))
-                    i += 2
-                    continue
-
-            if token in NUMBERS:
-                new_tokens.append(str(NUMBERS[token]))
-            else:
-                new_tokens.append(token)
-
-            i += 1
-
-        new_text = " ".join(new_tokens)
-        return new_text
+        return []
 
     def learn(self) -> None:
         with open(os.path.join(self.datasets_path(), "dataset.json"), "r", encoding="utf-8") as f:
@@ -179,7 +127,7 @@ class DateClassifier:
         # 8️⃣ Inference - Using the Trained Model
         ner_pipeline = pipeline("ner", model=self.model, tokenizer=self.tokenizer)
 
-        def parse_dates(text):
+        def parse_price(text):
             text = self.replace_texts_with_numbers(text)
             print(text)
             results = ner_pipeline(text)
@@ -188,7 +136,7 @@ class DateClassifier:
 
             return {"Start dates": start_dates, "End dates": end_dates}
 
-        return parse_dates(text)
+        return parse_price(text)
 
 
 if __name__ == '__main__':
