@@ -3,7 +3,7 @@ from datetime import datetime
 
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, pipeline, DataCollatorForTokenClassification, EarlyStoppingCallback
 from datasets import Dataset
-from typing import List, Dict
+from typing import List, Dict, Optional
 import torch
 import torch.nn.functional as F
 import json
@@ -175,7 +175,7 @@ class DateClassifier:
         self.model = AutoModelForTokenClassification.from_pretrained(self.model_path())
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path(), model_max_length=self.input_max_length)
 
-    def predict(self, query: str) -> Dict[str, List[datetime]]:
+    def predict(self, query: str) -> Dict[str, Optional[datetime]]:
         self.model.eval()
 
         # 8️⃣ Inference - Using the Trained Model
@@ -218,7 +218,7 @@ class DateClassifier:
             start_dates = [datetime_from_text(r["word"], False) for r in results if r["entity"] == "B-STARTDATE"]
             end_dates = [datetime_from_text(r["word"], True) for r in results if r["entity"] == "B-ENDDATE"]
 
-            return {"Start dates": start_dates, "End dates": end_dates}
+            return {"B-STARTDATE": start_dates[0] if len(start_dates) > 0 else None, "B-ENDDATE": end_dates[0] if len(end_dates) > 0 else None}
 
         return parse_dates(query)
 

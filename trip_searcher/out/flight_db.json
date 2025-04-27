@@ -1,118 +1,38 @@
 [
     {
         "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-05-03T00:00:00",
+        "destination": "LGW",
+        "departure_date": "2025-05-02T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 55.99
+            "value": 45.99
         }
     },
     {
-        "origin": "VIE",
-        "destination": "TGD",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TGD",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BIO",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "TGD",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 39.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "CLJ",
+        "origin": "TLV",
         "destination": "VIE",
         "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 55.99
+            "value": 179.99
         }
     },
     {
-        "origin": "LGW",
+        "origin": "TLV",
         "destination": "VIE",
-        "departure_date": "2025-04-25T00:00:00",
+        "departure_date": "2025-04-30T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 114.99
+            "value": 179.99
         }
     },
     {
-        "origin": "AMM",
+        "origin": "NCE",
         "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
+        "departure_date": "2025-04-27T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
@@ -120,309 +40,9 @@
         }
     },
     {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 289.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 289.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 289.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "OHD",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "LGW",
+        "origin": "TIA",
         "destination": "PRG",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3549.0
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "FNC",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 75.99
-        }
-    },
-    {
-        "origin": "TGD",
-        "destination": "VIE",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 199.99
-        }
-    },
-    {
-        "origin": "NCE",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "RMO",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
         "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 249.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2099.0
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "JED",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "BIO",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "JED",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "EVN",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 159.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AGP",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "CTA",
-        "destination": "PRG",
-        "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
@@ -430,183 +50,13 @@
         }
     },
     {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "CLJ",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 29.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1049.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "KUT",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
-        }
-    },
-    {
         "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2369.0
-        }
-    },
-    {
-        "origin": "TLV",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 224.99
-        }
-    },
-    {
-        "origin": "AGP",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 159.99
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "FNC",
+        "destination": "KUT",
         "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
+            "currency": "CZK",
+            "value": 4729.0
         }
     },
     {
@@ -620,26 +70,6 @@
         }
     },
     {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
         "origin": "LTN",
         "destination": "PRG",
         "departure_date": "2025-05-04T00:00:00",
@@ -660,163 +90,13 @@
         }
     },
     {
-        "origin": "LCA",
-        "destination": "PRG",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "AGP",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LCA",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3549.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LCA",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3549.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "CTA",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 39.99
-        }
-    },
-    {
-        "origin": "JED",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 174.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "TGD",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "NCE",
+        "origin": "RMO",
         "destination": "VIE",
         "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "NCE",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "JED",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
+            "value": 149.99
         }
     },
     {
@@ -830,129 +110,9 @@
         }
     },
     {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 4999.0
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
         "origin": "BCN",
         "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LCA",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2099.0
-        }
-    },
-    {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BIO",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "EVN",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "EVN",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "AMM",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "BIO",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
+        "departure_date": "2025-04-28T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
@@ -960,19 +120,29 @@
         }
     },
     {
-        "origin": "CLJ",
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "AUH",
         "destination": "VIE",
         "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 31.99
+            "value": 339.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-05-03T00:00:00",
+        "destination": "KUT",
+        "departure_date": "2025-05-02T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
@@ -980,93 +150,73 @@
         }
     },
     {
-        "origin": "MXP",
-        "destination": "PRG",
-        "departure_date": "2025-04-26T00:00:00",
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-04-30T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "MXP",
-        "destination": "PRG",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "TLV",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 129.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 249.99
-        }
-    },
-    {
-        "origin": "JED",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 204.99
+            "value": 4729.0
         }
     },
     {
         "origin": "VIE",
-        "destination": "KUT",
-        "departure_date": "2025-04-28T00:00:00",
+        "destination": "LGW",
+        "departure_date": "2025-04-25T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 69.99
+            "value": 0.0
         }
     },
     {
-        "origin": "TIA",
+        "origin": "FNC",
         "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
+        "departure_date": "2025-04-27T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 49.99
+            "value": 99.99
         }
     },
     {
-        "origin": "TLV",
+        "origin": "FNC",
         "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "CTA",
         "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
-            "currency": "EUR",
-            "value": 179.99
+            "currency": "CZK",
+            "value": 2369.0
         }
     },
     {
-        "origin": "TLV",
-        "destination": "VIE",
+        "origin": "LTN",
+        "destination": "PRG",
         "departure_date": "2025-04-30T00:00:00",
         "airline": "Wizzair",
         "price": {
-            "currency": "EUR",
-            "value": 179.99
+            "currency": "CZK",
+            "value": 949.0
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 949.0
         }
     },
     {
@@ -1081,177 +231,7 @@
     },
     {
         "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 119.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 119.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "CTA",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2369.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "LCA",
-        "destination": "PRG",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "EVN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "EVN",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "RMO",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "JED",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "NCE",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 149.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "JED",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "EVN",
-        "destination": "VIE",
+        "destination": "NCE",
         "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
@@ -1260,153 +240,53 @@
         }
     },
     {
-        "origin": "OHD",
+        "origin": "AUH",
         "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
+        "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 65.99
+            "value": 234.99
         }
     },
     {
-        "origin": "TGD",
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "JED",
         "destination": "VIE",
         "departure_date": "2025-04-28T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 59.99
+            "value": 189.99
         }
     },
     {
-        "origin": "BIO",
+        "origin": "LGW",
         "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TFS",
         "departure_date": "2025-05-04T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 85.99
+            "value": 134.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "TLV",
-        "destination": "VIE",
+        "destination": "EVN",
         "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "TLV",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 839.0
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 839.0
-        }
-    },
-    {
-        "origin": "AMM",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
+            "value": 65.99
         }
     },
     {
@@ -1416,13 +296,23 @@
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 79.99
+            "value": 89.99
         }
     },
     {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
+        "origin": "LCA",
+        "destination": "PRG",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1579.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "FNC",
+        "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
@@ -1430,73 +320,23 @@
         }
     },
     {
-        "origin": "TLV",
+        "origin": "BIO",
         "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
+        "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 199.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 949.0
+            "value": 59.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-04-26T00:00:00",
+        "destination": "RMO",
+        "departure_date": "2025-05-01T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 234.99
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "TIA",
-        "destination": "PRG",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
+            "value": 89.99
         }
     },
     {
@@ -1510,243 +350,23 @@
         }
     },
     {
-        "origin": "VIE",
-        "destination": "FNC",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "TLV",
+        "origin": "TFS",
         "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
+        "departure_date": "2025-04-29T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 39.99
+            "value": 179.99
         }
     },
     {
         "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "TIA",
-        "destination": "PRG",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "FNC",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 119.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1739.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 234.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "AGP",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "TIA",
-        "destination": "PRG",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1839.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "KUT",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "RMO",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "LCA",
-        "destination": "PRG",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1579.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 204.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "CTA",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "LCA",
-        "destination": "PRG",
+        "destination": "LCA",
         "departure_date": "2025-05-05T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 1839.0
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "CTA",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3549.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AGP",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 149.99
+            "value": 2099.0
         }
     },
     {
@@ -1761,132 +381,22 @@
     },
     {
         "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-04-29T00:00:00",
+        "destination": "FNC",
+        "departure_date": "2025-05-01T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 179.99
+            "value": 99.99
         }
     },
     {
-        "origin": "NCE",
+        "origin": "KUT",
         "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
         "departure_date": "2025-04-30T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 179.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "FNC",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 109.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TIA",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 29.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 31.99
-        }
-    },
-    {
-        "origin": "RMO",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 149.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "FNC",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AGP",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TIA",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
+            "value": 59.99
         }
     },
     {
@@ -1901,502 +411,12 @@
     },
     {
         "origin": "VIE",
-        "destination": "CLJ",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 35.99
-        }
-    },
-    {
-        "origin": "TIA",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "CLJ",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "VIE",
         "destination": "LGW",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TGD",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 39.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1049.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 24.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AMM",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 29.99
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AMM",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 29.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 69.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "KUT",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2369.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AMM",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "KUT",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2369.0
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "PRG",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 4209.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TFS",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "PRG",
-        "departure_date": "2025-04-25T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LCA",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3939.0
-        }
-    },
-    {
-        "origin": "AGP",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2099.0
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
         "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 339.99
-        }
-    },
-    {
-        "origin": "TFS",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "TIA",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "TIA",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1469.0
-        }
-    },
-    {
-        "origin": "TFS",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 179.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 174.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 174.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "BCN",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "KUT",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 4729.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "CLJ",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1579.0
-        }
-    },
-    {
-        "origin": "CTA",
-        "destination": "PRG",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1309.0
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "PRN",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BIO",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "LGW",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "MXP",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3019.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TFS",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "FNC",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 85.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "CLJ",
-        "destination": "VIE",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 124.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TIA",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "PRG",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3159.0
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "PRG",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3159.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AMM",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 89.99
+            "value": 31.99
         }
     },
     {
@@ -2411,7 +431,67 @@
     },
     {
         "origin": "VIE",
-        "destination": "TLV",
+        "destination": "BCN",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TGD",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "NCE",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "NCE",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
         "departure_date": "2025-04-27T00:00:00",
         "airline": "Wizzair",
         "price": {
@@ -2420,13 +500,1133 @@
         }
     },
     {
-        "origin": "KUT",
-        "destination": "VIE",
+        "origin": "VIE",
+        "destination": "TFS",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TGD",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BIO",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AGP",
         "departure_date": "2025-05-05T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
             "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "FNC",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 189.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 174.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 174.99
+        }
+    },
+    {
+        "origin": "TIA",
+        "destination": "PRG",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "CLJ",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 839.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "BIO",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "NCE",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "PRG",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3159.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LTN",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2369.0
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "PRG",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3159.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AGP",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "LCA",
+        "destination": "PRG",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "RMO",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "TIA",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 45.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1739.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 204.99
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-04-25T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "FNC",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 119.99
+        }
+    },
+    {
+        "origin": "AGP",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1579.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "CTA",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 4209.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 4209.0
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "PRG",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 4209.0
+        }
+    },
+    {
+        "origin": "RMO",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TGD",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TGD",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "CLJ",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 35.99
+        }
+    },
+    {
+        "origin": "AGP",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 159.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1049.0
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "FNC",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 85.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "MXP",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "KUT",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "CLJ",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 29.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LTN",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1049.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 39.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "KUT",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "CTA",
+        "destination": "PRG",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "AGP",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "MXP",
+        "destination": "PRG",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "MXP",
+        "destination": "PRG",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 949.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 234.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "PRG",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2889.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LTN",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2099.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "JED",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 204.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TIA",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 45.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "RMO",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "OHD",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "CLJ",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "CLJ",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 31.99
+        }
+    },
+    {
+        "origin": "TFS",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-25T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "OHD",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 24.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 129.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LTN",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 129.99
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "CLJ",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AMM",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 29.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AMM",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 29.99
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 789.0
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AMM",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 149.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2099.0
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "CTA",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3019.0
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "EVN",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "EVN",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "CTA",
+        "destination": "PRG",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "FNC",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 144.99
         }
     },
     {
@@ -2440,33 +1640,223 @@
         }
     },
     {
+        "origin": "LGW",
+        "destination": "PRG",
+        "departure_date": "2025-04-25T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3019.0
+        }
+    },
+    {
         "origin": "VIE",
-        "destination": "RMO",
+        "destination": "TLV",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 199.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LCA",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3939.0
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 39.99
+        }
+    },
+    {
+        "origin": "RMO",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "TIA",
+        "destination": "VIE",
         "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 149.99
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "OHD",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "AGP",
-        "departure_date": "2025-04-30T00:00:00",
+        "destination": "FNC",
+        "departure_date": "2025-05-04T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 89.99
+            "value": 75.99
         }
     },
     {
-        "origin": "JED",
+        "origin": "PRG",
+        "destination": "KUT",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2369.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "KUT",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2369.0
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 289.99
+        }
+    },
+    {
+        "origin": "AUH",
         "destination": "VIE",
         "departure_date": "2025-05-02T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 129.99
+            "value": 289.99
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 289.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 45.99
+        }
+    },
+    {
+        "origin": "JED",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 174.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TFS",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 85.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3549.0
+        }
+    },
+    {
+        "origin": "LCA",
+        "destination": "PRG",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1839.0
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-04-25T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
         }
     },
     {
@@ -2480,6 +1870,336 @@
         }
     },
     {
+        "origin": "VIE",
+        "destination": "AMM",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 179.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1049.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "JED",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "JED",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 179.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 179.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "TIA",
+        "destination": "PRG",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 134.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 4999.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BIO",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 124.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 45.99
+        }
+    },
+    {
+        "origin": "AGP",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 189.99
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 189.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 949.0
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 949.0
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "CLJ",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-04-25T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "OHD",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AGP",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 149.99
+        }
+    },
+    {
+        "origin": "FNC",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
         "origin": "PRG",
         "destination": "LCA",
         "departure_date": "2025-04-30T00:00:00",
@@ -2487,6 +2207,366 @@
         "price": {
             "currency": "CZK",
             "value": 3019.0
+        }
+    },
+    {
+        "origin": "CTA",
+        "destination": "PRG",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1839.0
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 39.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "TIA",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "TIA",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1469.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TIA",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 29.99
+        }
+    },
+    {
+        "origin": "NCE",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "KUT",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2099.0
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "JED",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TFS",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 189.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 249.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TIA",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "KUT",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 119.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 119.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "EVN",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "EVN",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "FNC",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 109.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 224.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "BCN",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 0.0
+        }
+    },
+    {
+        "origin": "KUT",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "MXP",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3019.0
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 249.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LCA",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3549.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LCA",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3549.0
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LGW",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 659.0
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 129.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "LGW",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "TIA",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "FCO",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 2629.0
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1309.0
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 1579.0
         }
     },
     {
@@ -2510,133 +2590,13 @@
         }
     },
     {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 839.0
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "RMO",
+        "origin": "FNC",
         "destination": "VIE",
         "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
             "value": 89.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 189.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "MXP",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2629.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "OHD",
-        "departure_date": "2025-04-28T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 59.99
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 949.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TGD",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TGD",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3549.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "KUT",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1579.0
-        }
-    },
-    {
-        "origin": "RMO",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 114.99
         }
     },
     {
@@ -2650,58 +2610,18 @@
         }
     },
     {
-        "origin": "TIA",
-        "destination": "VIE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 45.99
-        }
-    },
-    {
-        "origin": "OHD",
+        "origin": "AMM",
         "destination": "VIE",
         "departure_date": "2025-04-28T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 134.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LGW",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 659.0
-        }
-    },
-    {
-        "origin": "TGD",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "LTN",
-        "destination": "PRG",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 789.0
+            "value": 149.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "NCE",
+        "destination": "EVN",
         "departure_date": "2025-04-27T00:00:00",
         "airline": "Wizzair",
         "price": {
@@ -2711,122 +2631,12 @@
     },
     {
         "origin": "VIE",
-        "destination": "KUT",
-        "departure_date": "2025-05-05T00:00:00",
+        "destination": "EVN",
+        "departure_date": "2025-05-01T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 49.99
-        }
-    },
-    {
-        "origin": "AUH",
-        "destination": "VIE",
-        "departure_date": "2025-05-05T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 204.99
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 4729.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "BCN",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "PRG",
-        "destination": "LTN",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 1049.0
-        }
-    },
-    {
-        "origin": "TFS",
-        "destination": "VIE",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 229.99
-        }
-    },
-    {
-        "origin": "KUT",
-        "destination": "PRG",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 2889.0
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-04-30T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 949.0
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 949.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-04-26T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 0.0
+            "value": 99.99
         }
     },
     {
@@ -2840,129 +2650,19 @@
         }
     },
     {
-        "origin": "FCO",
-        "destination": "PRG",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "CZK",
-            "value": 3289.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "LGW",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 99.99
-        }
-    },
-    {
         "origin": "PRG",
-        "destination": "KUT",
+        "destination": "CTA",
         "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 2099.0
+            "value": 3549.0
         }
     },
     {
         "origin": "VIE",
-        "destination": "EVN",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "AUH",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 144.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "OHD",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 65.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-05-04T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 129.99
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-05-03T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 129.99
-        }
-    },
-    {
-        "origin": "TGD",
-        "destination": "VIE",
-        "departure_date": "2025-05-02T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 55.99
-        }
-    },
-    {
-        "origin": "EVN",
-        "destination": "VIE",
-        "departure_date": "2025-04-27T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "EVN",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 0.0
-        }
-    },
-    {
-        "origin": "VIE",
-        "destination": "NCE",
-        "departure_date": "2025-04-29T00:00:00",
-        "airline": "Wizzair",
-        "price": {
-            "currency": "EUR",
-            "value": 79.99
-        }
-    },
-    {
-        "origin": "TLV",
-        "destination": "VIE",
-        "departure_date": "2025-05-01T00:00:00",
+        "destination": "RMO",
+        "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
@@ -2970,13 +2670,33 @@
         }
     },
     {
-        "origin": "VIE",
-        "destination": "PRN",
-        "departure_date": "2025-05-01T00:00:00",
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 99.99
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TLV",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 45.99
+        }
+    },
+    {
+        "origin": "TFS",
+        "destination": "VIE",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 229.99
         }
     },
     {
@@ -2990,53 +2710,333 @@
         }
     },
     {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-05-02T00:00:00",
+        "origin": "VIE",
+        "destination": "BIO",
+        "departure_date": "2025-05-03T00:00:00",
         "airline": "Wizzair",
         "price": {
-            "currency": "CZK",
-            "value": 4209.0
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
+        }
+    },
+    {
+        "origin": "BCN",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 49.99
         }
     },
     {
         "origin": "VIE",
-        "destination": "TLV",
-        "departure_date": "2025-05-01T00:00:00",
+        "destination": "AUH",
+        "departure_date": "2025-04-28T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "EUR",
-            "value": 179.99
+            "value": 99.99
         }
     },
     {
-        "origin": "PRG",
-        "destination": "FCO",
-        "departure_date": "2025-05-03T00:00:00",
+        "origin": "VIE",
+        "destination": "AUH",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 99.99
+        }
+    },
+    {
+        "origin": "LGW",
+        "destination": "PRG",
+        "departure_date": "2025-04-25T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 4209.0
+            "value": 3549.0
+        }
+    },
+    {
+        "origin": "EVN",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 159.99
+        }
+    },
+    {
+        "origin": "LCA",
+        "destination": "PRG",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3019.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "JED",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 69.99
+        }
+    },
+    {
+        "origin": "EVN",
+        "destination": "VIE",
+        "departure_date": "2025-04-26T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 189.99
+        }
+    },
+    {
+        "origin": "OHD",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 65.99
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
         }
     },
     {
         "origin": "LTN",
         "destination": "PRG",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 839.0
+        }
+    },
+    {
+        "origin": "LTN",
+        "destination": "PRG",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 839.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "TGD",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 39.99
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "PRN",
+        "destination": "VIE",
+        "departure_date": "2025-05-01T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
+        }
+    },
+    {
+        "origin": "JED",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 129.99
+        }
+    },
+    {
+        "origin": "TLV",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 199.99
+        }
+    },
+    {
+        "origin": "PRG",
+        "destination": "LTN",
         "departure_date": "2025-04-27T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 949.0
+            "value": 3019.0
         }
     },
     {
-        "origin": "CTA",
-        "destination": "PRG",
+        "origin": "PRG",
+        "destination": "LTN",
         "departure_date": "2025-04-26T00:00:00",
         "airline": "Wizzair",
         "price": {
             "currency": "CZK",
-            "value": 2629.0
+            "value": 3019.0
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "NCE",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "TGD",
+        "destination": "VIE",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 59.99
+        }
+    },
+    {
+        "origin": "FCO",
+        "destination": "PRG",
+        "departure_date": "2025-05-04T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "CZK",
+            "value": 3289.0
+        }
+    },
+    {
+        "origin": "BIO",
+        "destination": "VIE",
+        "departure_date": "2025-05-03T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 55.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "AGP",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-04-27T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 89.99
+        }
+    },
+    {
+        "origin": "AMM",
+        "destination": "VIE",
+        "departure_date": "2025-05-02T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "AMM",
+        "destination": "VIE",
+        "departure_date": "2025-04-30T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "AUH",
+        "destination": "VIE",
+        "departure_date": "2025-05-05T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 204.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "KUT",
+        "departure_date": "2025-04-28T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 79.99
+        }
+    },
+    {
+        "origin": "VIE",
+        "destination": "PRN",
+        "departure_date": "2025-04-29T00:00:00",
+        "airline": "Wizzair",
+        "price": {
+            "currency": "EUR",
+            "value": 114.99
         }
     }
 ]

@@ -2,7 +2,7 @@ from city_db.city_db import CityDB
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from flight_db import FlightDB, SearchFlightParameters
+from flight_db import FlightDB, SearchFlightParameters, Price
 from datetime import datetime, timedelta
 
 
@@ -37,13 +37,13 @@ class TripSearcher:
         self.flight_db.load_flights()
 
     def search(self, query: str):
-        route = self.route_parser.predict(query)
-        dates = self.date_classifier.predict(query)
-        price = self.price_parser.predict(query)
+        parsed_route = self.route_parser.predict(query)
+        parsed_dates = self.date_classifier.predict(query)
+        parsed_price = self.price_parser.predict(query)
 
-        origin_cities_ru = [origin_city for origin_city in route['B-DEP'] if 'B-DEP' in route]
+        origin_cities_ru = [origin_city for origin_city in parsed_route['B-DEP'] if 'B-DEP' in parsed_route]
 
-        destination_cities_ru = [destination_city for destination_city in route['B-DEST'] if 'B-DEST' in route]
+        destination_cities_ru = [destination_city for destination_city in parsed_route['B-DEST'] if 'B-DEST' in parsed_route]
 
         cities_ru_to_en = dict()
 
@@ -60,16 +60,19 @@ class TripSearcher:
 
         # Get the current date
         departure_date_from = datetime.now()
-        departure_date_from_str = departure_date_from.strftime("%y-%m-%d")
+        if "B-STARTDATE" in parsed_dates:
+            departure_date_from = parsed_dates["B-STARTDATE"]
 
-        departure_date_to = departure_date_from + timedelta(days=10)
-        departure_date_to_str = departure_date_to.strftime("%y-%m-%d")
+        departure_date_to = departure_date_from + timedelta(days=15)
+        if "B-ENDDATE" in parsed_dates:
+            departure_date_to = parsed_dates["B-ENDDATE"]
 
-        return_date_from = departure_date_from + timedelta(days=5)
-        return_date_from_str = return_date_from.strftime("%y-%m-%d")
+        return_date_from = departure_date_from
 
-        return_date_to = departure_date_from + timedelta(days=15)
-        return_date_to_str = return_date_to.strftime("%y-%m-%d")
+        return_date_to = departure_date_to
+
+        price_value, price_currency = parsed_price.split()
+        price = Price(currency=price_currency, value=float(price_value))
 
         round_trips = []
 
@@ -86,8 +89,9 @@ class TripSearcher:
                     search_flight_parameters.destination = destination_code
                     search_flight_parameters.outbound_departure_date_from = departure_date_from
                     search_flight_parameters.outbound_departure_date_to = departure_date_to
-                    search_flight_parameters.inbound_departure_date_from = departure_date_from
-                    search_flight_parameters.inbound_departure_date_to = departure_date_to
+                    search_flight_parameters.inbound_departure_date_from = return_date_from
+                    search_flight_parameters.inbound_departure_date_to = return_date_to
+                    search_flight_parameters.max_price = price
 
                     self.flight_db.fetch_flights(search_flight_parameters)
                     round_trips = self.flight_db.get_flights(search_flight_parameters)
@@ -96,8 +100,9 @@ class TripSearcher:
                 search_flight_parameters.origin = origin_code
                 search_flight_parameters.outbound_departure_date_from = departure_date_from
                 search_flight_parameters.outbound_departure_date_to = departure_date_to
-                search_flight_parameters.inbound_departure_date_from = departure_date_from
-                search_flight_parameters.inbound_departure_date_to = departure_date_to
+                search_flight_parameters.inbound_departure_date_from = return_date_from
+                search_flight_parameters.inbound_departure_date_to = return_date_to
+                search_flight_parameters.max_price = price
 
                 self.flight_db.fetch_flights(search_flight_parameters)
                 round_trips = self.flight_db.get_flights(search_flight_parameters)
