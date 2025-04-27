@@ -92,6 +92,7 @@ class TripSearcher:
                     search_flight_parameters.inbound_departure_date_from = return_date_from
                     search_flight_parameters.inbound_departure_date_to = return_date_to
                     search_flight_parameters.max_price = price
+                    search_flight_parameters.max_trip_duration = 3
 
                     self.flight_db.fetch_flights(search_flight_parameters)
                     round_trips = self.flight_db.get_flights(search_flight_parameters)
@@ -103,6 +104,7 @@ class TripSearcher:
                 search_flight_parameters.inbound_departure_date_from = return_date_from
                 search_flight_parameters.inbound_departure_date_to = return_date_to
                 search_flight_parameters.max_price = price
+                search_flight_parameters.max_trip_duration = 3
 
                 self.flight_db.fetch_flights(search_flight_parameters)
                 round_trips = self.flight_db.get_flights(search_flight_parameters)

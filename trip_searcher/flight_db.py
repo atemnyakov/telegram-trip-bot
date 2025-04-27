@@ -100,6 +100,8 @@ class SearchFlightParameters:
         self.inbound_departure_date_from: datetime | None = None
         self.inbound_departure_date_to: datetime | None = None
         self.max_price: Price | None = None
+        self.min_trip_duration: int = 2
+        self.max_trip_duration: int = 5
 
 
 class Flight:
@@ -328,7 +330,7 @@ class FlightDB:
                 if inbound_flight.origin != outbound_flight.destination:
                     continue
 
-                if inbound_flight.departure_date < inbound_flight.departure_date or inbound_flight.departure_date < parameters.inbound_departure_date_from or inbound_flight.departure_date > parameters.inbound_departure_date_to:
+                if inbound_flight.departure_date < outbound_flight.departure_date or inbound_flight.departure_date < parameters.inbound_departure_date_from or inbound_flight.departure_date > parameters.inbound_departure_date_to:
                     continue
 
                 if inbound_flight.destination != parameters.origin:
@@ -351,6 +353,10 @@ class FlightDB:
 
                     if outbound_flight.price.value + inbound_flight.price.value > parameters.max_price.value:
                         continue
+
+                trip_duration = (inbound_flight.departure_date - outbound_flight.departure_date).days
+                if trip_duration < parameters.min_trip_duration or trip_duration > parameters.max_trip_duration:
+                    continue
 
                 trips.add((outbound_flight, inbound_flight))
 
