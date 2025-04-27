@@ -34,7 +34,7 @@ class TextToNumberConverter:
                 result_number = 0
                 for current_token in partial_number_tokens:
                     current_token_number = self.texts_to_number[current_token[1]]
-                    if current_token_number >= 1000:
+                    if current_token_number >= 1000 and result_number > 0:
                         result_number *= current_token_number
                     else:
                         result_number += current_token_number
@@ -43,6 +43,7 @@ class TextToNumberConverter:
                 text = re.sub(result_number_text, f"{result_number}", text, flags=re.IGNORECASE)
             else:
                 i += 1
+        return text
 
 
 

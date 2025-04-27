@@ -6,6 +6,8 @@ import torch
 import torch.nn.functional as F
 import json
 
+from text_to_number_converter import TextToNumberConverter
+
 
 class PriceParser:
     def __init__(self):
@@ -21,7 +23,16 @@ class PriceParser:
         return os.path.join(self.path, 'datasets')
 
     def create_tokens(self):
-        return []
+        tokens = []
+        currencies = {
+            "евро",
+            "крон"
+        }
+        for i in range(1, 5000):
+            for currency in currencies:
+                token = f"{i} {currency}"
+                tokens.append(token)
+        return tokens
 
     def learn(self) -> None:
         with open(os.path.join(self.datasets_path(), "dataset.json"), "r", encoding="utf-8") as f:
@@ -40,7 +51,7 @@ class PriceParser:
         # add new, random embeddings for the new tokens
 
         # Define Label Mapping
-        label_list = ["O", "B-STARTDATE", "B-ENDDATE"]
+        label_list = ["O", "EUR", "CZK"]
         id2label = {i: label for i, label in enumerate(label_list)}
         label2id = {label: i for i, label in enumerate(label_list)}
 
@@ -121,35 +132,39 @@ class PriceParser:
         self.model = AutoModelForTokenClassification.from_pretrained(self.model_path())
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path(), model_max_length=self.input_max_length)
 
-    def predict(self, text: str) -> Dict[str, List[str]]:
+    def predict(self, text: str) -> str:
         self.model.eval()
 
         # 8️⃣ Inference - Using the Trained Model
         ner_pipeline = pipeline("ner", model=self.model, tokenizer=self.tokenizer)
 
         def parse_price(text):
-            text = self.replace_texts_with_numbers(text)
+            text_to_number_converter = TextToNumberConverter()
+            text = text_to_number_converter.convert(text)
             print(text)
             results = ner_pipeline(text)
-            start_dates = [r["word"] for r in results if r["entity"] == "B-STARTDATE"]
-            end_dates = [r["word"] for r in results if r["entity"] == "B-ENDDATE"]
-
-            return {"Start dates": start_dates, "End dates": end_dates}
+            price = [r["word"] for r in results if r["entity"] in ["CZK", "EUR"]]
+            return price[0] if len(price) > 0 else ""
 
         return parse_price(text)
 
 
 if __name__ == '__main__':
-    date_classifier = DateClassifier()
-    date_classifier.learn()
-    date_classifier.save()
-    date_classifier.load()
+    price_parser = PriceParser()
+    price_parser.learn()
+    price_parser.save()
+    price_parser.load()
     queries = [
-        "Я хочу куда-то полететь с двадцать первого января по 22 января",
-        "Я хочу куда-то полететь по двадцать второго января с 21 января",
-        "В Берлине буду с 1 марта до 3 марта",
+        "Я хочу куда-то полететь с двадцать первого января по 22 января с бюджетом до 50 евро",
+        "Я хочу куда-то полететь по двадцать второго января с 21 января за 1000 крон",
+        "Хочу в Берлин с 1 марта до 3 марта за тысячу пятьсот крон",
         "Буду в Берлине до 4 апреля"
     ]
     for query in queries:
-        start_end_date = date_classifier.predict(query)
-        print(start_end_date)
+        price = price_parser.predict(query)
+        print(price)
+    # text = "тысячу пятьсот крон"
+    # # text = "Две тысячи пятьсот один и три тысячи два и сто двадцать пять тысяч триста пятьдесят три"
+    # text_to_number_converter = TextToNumberConverter()
+    # text = text_to_number_converter.convert(text)
+    # lol = 0
