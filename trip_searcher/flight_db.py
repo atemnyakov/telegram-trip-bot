@@ -3,6 +3,8 @@ import os
 from datetime import datetime
 from typing import Set, Tuple, Dict, Optional
 
+from currency_converter import CurrencyConverter
+
 from ryanair import Ryanair
 from wizzair import Wizzair
 
@@ -304,6 +306,11 @@ class FlightDB:
 
         self.save_flights()
 
+    def convert_currency(self, amount, from_currency, to_currency):
+        c = CurrencyConverter()
+        converted_amount = c.convert(amount, from_currency, to_currency)
+        return converted_amount
+
     def get_flights(self, parameters: SearchFlightParameters) -> Set[Tuple[Flight, Flight]]:
         trips: Set[Tuple[Flight, Flight]] = set()
 
@@ -327,8 +334,23 @@ class FlightDB:
                 if inbound_flight.destination != parameters.origin:
                     continue
 
-                if outbound_flight.price.value + inbound_flight.price.value > 1500:
-                    continue
+                if parameters.max_price is not None:
+                    required_currency = parameters.max_price.currency
+
+                    if outbound_flight.price.currency != required_currency:
+                        outbound_flight.price = Price(value=self.convert_currency(amount=outbound_flight.price.value,
+                                                                                  from_currency=outbound_flight.price.currency,
+                                                                                  to_currency=required_currency),
+                                                      currency=required_currency)
+
+                    if inbound_flight.price.currency != required_currency:
+                        inbound_flight.price = Price(value=self.convert_currency(amount=inbound_flight.price.value,
+                                                                                  from_currency=inbound_flight.price.currency,
+                                                                                  to_currency=required_currency),
+                                                      currency=required_currency)
+
+                    if outbound_flight.price.value + inbound_flight.price.value > parameters.max_price.value:
+                        continue
 
                 trips.add((outbound_flight, inbound_flight))
 
