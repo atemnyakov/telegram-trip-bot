@@ -1,4 +1,6 @@
 import os
+from datetime import datetime
+
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, pipeline, DataCollatorForTokenClassification, EarlyStoppingCallback
 from datasets import Dataset
 from typing import List, Dict
@@ -173,22 +175,52 @@ class DateClassifier:
         self.model = AutoModelForTokenClassification.from_pretrained(self.model_path())
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path(), model_max_length=self.input_max_length)
 
-    def predict(self, text: str) -> Dict[str, List[str]]:
+    def predict(self, query: str) -> Dict[str, List[datetime]]:
         self.model.eval()
 
         # 8️⃣ Inference - Using the Trained Model
         ner_pipeline = pipeline("ner", model=self.model, tokenizer=self.tokenizer)
 
-        def parse_dates(text):
-            text = self.replace_texts_with_numbers(text)
-            print(text)
-            results = ner_pipeline(text)
-            start_dates = [r["word"] for r in results if r["entity"] == "B-STARTDATE"]
-            end_dates = [r["word"] for r in results if r["entity"] == "B-ENDDATE"]
+        def parse_dates(query: str):
+            query = self.replace_texts_with_numbers(query)
+
+            results = ner_pipeline(query)
+
+            def datetime_from_text(text: str, end_of_day: bool) -> datetime:
+                tokens = text.split()
+
+                months_to_numbers = {
+                    "января": 1,
+                    "февраля": 2,
+                    "марта": 3,
+                    "апреля": 4,
+                    "мая": 5,
+                    "июня": 6,
+                    "июля": 7,
+                    "августа": 8,
+                    "сентября": 9,
+                    "октября": 10,
+                    "ноября": 11,
+                    "декабря": 12,
+                }
+
+                month_and_day_str = f"{months_to_numbers[tokens[1]]}-{tokens[0]}"
+
+                year = datetime.now().year  # or set a specific year like 2025
+
+                date = datetime.strptime(f"{year}-{month_and_day_str}", "%Y-%m-%d")
+
+                if end_of_day:
+                    date = date.replace(hour=23, minute=59)
+
+                return date
+
+            start_dates = [datetime_from_text(r["word"], False) for r in results if r["entity"] == "B-STARTDATE"]
+            end_dates = [datetime_from_text(r["word"], True) for r in results if r["entity"] == "B-ENDDATE"]
 
             return {"Start dates": start_dates, "End dates": end_dates}
 
-        return parse_dates(text)
+        return parse_dates(query)
 
 
 if __name__ == '__main__':
