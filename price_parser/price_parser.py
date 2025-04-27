@@ -25,14 +25,24 @@ class PriceParser:
     def create_tokens(self):
         tokens = []
         currencies = {
-            "евро",
-            "крон"
+            "EUR",
+            "CZK"
         }
         for i in range(1, 5000):
             for currency in currencies:
                 token = f"{i} {currency}"
                 tokens.append(token)
         return tokens
+
+    def replace_currency_words_with_codes(self, query: str):
+        words2codes = {
+            "евро": "EUR",
+            "крон": "CZK",
+            "крона": "CZK"
+        }
+        for word, code in words2codes.items():
+            query = query.replace(word, code)
+        return query
 
     def learn(self) -> None:
         with open(os.path.join(self.datasets_path(), "dataset.json"), "r", encoding="utf-8") as f:
@@ -141,6 +151,7 @@ class PriceParser:
         def parse_price(text):
             text_to_number_converter = TextToNumberConverter()
             text = text_to_number_converter.convert(text)
+            text = self.replace_currency_words_with_codes(text)
             print(text)
             results = ner_pipeline(text)
             price = [r["word"] for r in results if r["entity"] in ["CZK", "EUR"]]
