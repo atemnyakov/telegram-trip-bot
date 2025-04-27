@@ -1,17 +1,33 @@
 from city_db.city_db import CityDB
+from date_classifier.date_classifier import DateClassifier
+from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
 from flight_db import FlightDB, SearchFlightParameters
 from datetime import datetime, timedelta
 
 
 class TripSearcher:
-    def __init__(self, train_route_parser: bool = False):
+    def __init__(self, train_route_parser: bool = False, train_date_classifier: bool = False, train_price_parser: bool = False):
         self.route_parser = RouteParser()
         if train_route_parser:
             self.route_parser.learn()
             self.route_parser.save()
         else:
             self.route_parser.load()
+
+        self.date_classifier = DateClassifier()
+        if train_date_classifier:
+            self.date_classifier.learn()
+            self.date_classifier.save()
+        else:
+            self.date_classifier.load()
+
+        self.price_parser = PriceParser()
+        if train_date_classifier:
+            self.price_parser.learn()
+            self.price_parser.save()
+        else:
+            self.price_parser.load()
 
         self.city_db = CityDB()
         self.city_db.load()
@@ -21,11 +37,13 @@ class TripSearcher:
         self.flight_db.load_flights()
 
     def search(self, query: str):
-        route_prediction = self.route_parser.predict(query)
+        route = self.route_parser.predict(query)
+        dates = self.date_classifier.predict(query)
+        price = self.price_parser.predict(query)
 
-        origin_cities_ru = [origin_city for origin_city in route_prediction['B-DEP'] if 'B-DEP' in route_prediction]
+        origin_cities_ru = [origin_city for origin_city in route['B-DEP'] if 'B-DEP' in route]
 
-        destination_cities_ru = [destination_city for destination_city in route_prediction['B-DEST'] if 'B-DEST' in route_prediction]
+        destination_cities_ru = [destination_city for destination_city in route['B-DEST'] if 'B-DEST' in route]
 
         cities_ru_to_en = dict()
 
@@ -96,7 +114,8 @@ class TripSearcher:
 
 
 if __name__ == '__main__':
-    trip_searcher = TripSearcher(train_route_parser=False)
-    trip_searcher.search(query='Куда я могу полететь из Праги или Вены на выходных?')
+    trip_searcher = TripSearcher(train_route_parser=True, train_date_classifier=True, train_price_parser=True)
+    # trip_searcher.search(query='Куда я могу полететь из Праги или Вены на выходных?')
+    trip_searcher.search(query='Куда я могу полететь из Праги или Вены с 1 июня по 31 июля с бюджетом до 100 евро?')
 
 
