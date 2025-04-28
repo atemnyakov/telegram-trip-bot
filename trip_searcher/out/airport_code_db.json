@@ -248,13 +248,16 @@
         "Rimini\r\n"
     ],
     "ROM": [
-        "Rome (Any)"
+        "Rome (Any)",
+        "Rome"
     ],
     "CIA": [
-        "Rome Ciampino"
+        "Rome Ciampino",
+        "Rome"
     ],
     "FCO": [
-        "Rome Fiumicino"
+        "Rome Fiumicino",
+        "Rome"
     ],
     "QSR": [
         "Salerno (Naples)",

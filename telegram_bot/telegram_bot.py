@@ -10,7 +10,7 @@ class TelegramBot:
         self.bot = Bot(token=self.token)
         self.dp = Dispatcher()
 
-        self.trip_searcher = TripSearcher(train_route_parser=False)
+        self.trip_searcher = TripSearcher(train_route_parser=False, train_price_parser=False, train_date_classifier=False)
 
         # Register handlers
         self.register_handlers()

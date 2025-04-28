@@ -24,7 +24,7 @@ class TripSearcher:
             self.date_classifier.load()
 
         self.price_parser = PriceParser()
-        if train_date_classifier:
+        if train_price_parser:
             self.price_parser.learn()
             self.price_parser.save()
         else:
