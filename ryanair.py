@@ -510,3 +510,55 @@ class Ryanair:
 
         return outbound_flights, inbound_flights
 
+if __name__ == '__main__':
+    ryanair = Ryanair()
+
+    airport_info = ryanair.get_airport_info('PRG')
+    print(airport_info)
+
+    destinations = ryanair.get_destinations(origin='PRG')
+    print(destinations)
+
+    cheapest_flights = ryanair.get_cheapest_flights(
+        origin='PRG',
+        destination='BGY',
+        departure_date='2025-06-06'
+    )
+    print(cheapest_flights)
+
+    one_way_fares = ryanair.get_one_way_fares(
+        origin='PRG',
+        outbound_departure_date_from='2025-06-06',
+        outbound_departure_date_to='2025-06-06'
+    )
+    print(one_way_fares)
+
+    round_trip_fares = ryanair.get_round_trip_fares(
+        origin='PRG',
+        outbound_departure_date_from='2025-06-01',
+        outbound_departure_date_to='2025-06-29',
+        inbound_departure_date_from='2025-07-03',
+        inbound_departure_date_to='2025-07-31'
+    )
+    print(round_trip_fares)
+
+    one_way_flights = ryanair.get_flights(
+        origin='PRG',
+        destination='BGY',
+        departure_date='2025-06-06'
+    )
+    print(one_way_flights)
+
+    round_flights = ryanair.get_flights(
+        origin='PRG',
+        destination='BGY',
+        departure_date='2025-06-01',
+        flex_days_before_departure=0,
+        flex_days_after_departure=5,
+        return_date='2025-06-01',
+        flex_days_before_return=0,
+        flex_days_after_return=5
+    )
+    print(round_flights[0])
+    print(round_flights[1])
+

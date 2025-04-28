@@ -1,7 +1,7 @@
 import os
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, pipeline, DataCollatorForTokenClassification, EarlyStoppingCallback
 from datasets import Dataset
-from typing import List, Dict
+from typing import List, Dict, Optional
 import torch
 import torch.nn.functional as F
 import json
@@ -142,7 +142,7 @@ class PriceParser:
         self.model = AutoModelForTokenClassification.from_pretrained(self.model_path())
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path(), model_max_length=self.input_max_length)
 
-    def predict(self, text: str) -> str:
+    def predict(self, text: str) -> Optional[str]:
         self.model.eval()
 
         # 8️⃣ Inference - Using the Trained Model
@@ -155,19 +155,19 @@ class PriceParser:
             print(text)
             results = ner_pipeline(text)
             price = [r["word"] for r in results if r["entity"] in ["CZK", "EUR"]]
-            return price[0] if len(price) > 0 else ""
+            return price[0] if len(price) > 0 else None
 
         return parse_price(text)
 
 
 if __name__ == '__main__':
     price_parser = PriceParser()
-    price_parser.learn()
-    price_parser.save()
+    # price_parser.learn()
+    # price_parser.save()
     price_parser.load()
     queries = [
         "Я хочу куда-то полететь с двадцать первого января по 22 января с бюджетом до 50 евро",
-        "Я хочу куда-то полететь по двадцать второго января с 21 января за 1000 крон",
+        "Я хочу куда-то полететь по двадцать второе января с 21 января за 1000 крон",
         "Хочу в Берлин с 1 марта до 3 марта за тысячу пятьсот крон",
         "Буду в Берлине до 4 апреля"
     ]

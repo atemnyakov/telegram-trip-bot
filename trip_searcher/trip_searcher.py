@@ -71,8 +71,10 @@ class TripSearcher:
 
         return_date_to = departure_date_to
 
-        price_value, price_currency = parsed_price.split()
-        price = Price(currency=price_currency, value=float(price_value))
+        price = None
+        if parsed_price is not None:
+            price_value, price_currency = parsed_price.split()
+            price = Price(currency=price_currency, value=float(price_value))
 
         round_trips = []
 
