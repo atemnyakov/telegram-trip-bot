@@ -97,7 +97,7 @@ class TripSearcher:
                     search_flight_parameters.max_trip_duration = 3
 
                     self.flight_db.fetch_flights(search_flight_parameters)
-                    round_trips = self.flight_db.get_flights(search_flight_parameters)
+                    round_trips.extend(self.flight_db.get_flights(search_flight_parameters))
             else:
                 search_flight_parameters = SearchFlightParameters()
                 search_flight_parameters.origin = origin_code
@@ -109,7 +109,7 @@ class TripSearcher:
                 search_flight_parameters.max_trip_duration = 3
 
                 self.flight_db.fetch_flights(search_flight_parameters)
-                round_trips = self.flight_db.get_flights(search_flight_parameters)
+                round_trips.extend(self.flight_db.get_flights(search_flight_parameters))
 
         response = ""
 

@@ -1,6 +1,7 @@
+import copy
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Set, Tuple, Dict, Optional
 
 from currency_converter import CurrencyConverter
@@ -267,10 +268,13 @@ class FlightDB:
                 return Flight(
                     origin=flight.origin,
                     destination=flight.destination,
-                    departure_date=flight.departure_date,
+                    departure_date=datetime.strptime(flight.departure_date, "%Y-%m-%dT%H:%M:%S"),
                     airline='Ryanair',
                     price=Price(flight.price.currency, flight.price.value)
                 )
+
+            nonlocal outbound_flights
+            nonlocal inbound_flights
 
             cheapest_flights_outbound = self.ryanair.get_cheapest_flights(
                 origin=parameters_ryr.origin,
@@ -278,11 +282,15 @@ class FlightDB:
                 departure_date=parameters_ryr.outbound_departure_date_from.strftime("%Y-%m-%d")
             )
 
+            outbound_flights.update([create_flight(flight) for flight in cheapest_flights_outbound])
+
             cheapest_flights_inbound = self.ryanair.get_cheapest_flights(
                 origin=parameters_ryr.destination,
                 destination=parameters_ryr.origin,
                 departure_date=parameters_ryr.inbound_departure_date_from.strftime("%Y-%m-%d")
             )
+
+            inbound_flights.update([create_flight(flight) for flight in cheapest_flights_inbound])
 
             # one_way_flights = self.ryanair.get_flights(
             #     origin=parameters_ryr.origin,
@@ -294,24 +302,41 @@ class FlightDB:
             flex_days_after_departure = (parameters_ryr.outbound_departure_date_to - parameters_ryr.outbound_departure_date_from).days
             flex_days_after_return = (parameters_ryr.inbound_departure_date_to - parameters_ryr.inbound_departure_date_from).days
 
-            round_flights = self.ryanair.get_flights(
-                origin=parameters_ryr.origin,
-                destination=parameters_ryr.destination,
-                departure_date=parameters_ryr.outbound_departure_date_from.strftime("%Y-%m-%d"),
-                flex_days_before_departure=0,
-                flex_days_after_departure=flex_days_after_departure,
-                return_date=parameters_ryr.inbound_departure_date_from.strftime("%Y-%m-%d"),
-                flex_days_before_return=0,
-                flex_days_after_return=flex_days_after_return
-            )
-
-            nonlocal outbound_flights
-            outbound_flights.update([create_flight(flight) for flight in cheapest_flights_outbound])
-            outbound_flights.update([create_flight(flight) for flight in round_flights[0] if (round_flights is not None and round_flights[0] is not None and len(round_flights[0]) > 0)])
-
-            nonlocal inbound_flights
-            inbound_flights.update([create_flight(flight) for flight in cheapest_flights_inbound])
-            inbound_flights.update([create_flight(flight) for flight in round_flights[1] if (round_flights is not None and round_flights[1] is not None and len(round_flights[1]) > 0)])
+            # step_days = 5
+            # step = timedelta(days=step_days)
+            #
+            # current_outbound_departure_date_from = parameters_ryr.outbound_departure_date_from
+            #
+            # while current_outbound_departure_date_from < parameters_ryr.outbound_departure_date_to:
+            #     current_outbound_departure_date_to = min(current_outbound_departure_date_from + step, parameters_ryr.outbound_departure_date_to)
+            #
+            #     current_inbound_departure_date_from = parameters_ryr.inbound_departure_date_from
+            #
+            #     while current_inbound_departure_date_from < parameters_ryr.inbound_departure_date_to:
+            #         current_inbound_departure_date_to = min(current_inbound_departure_date_from + step, parameters_ryr.inbound_departure_date_to)
+            #
+            #         round_flights = self.ryanair.get_flights(
+            #             origin=parameters_ryr.origin,
+            #             destination=parameters_ryr.destination,
+            #             departure_date=current_outbound_departure_date_from.strftime("%Y-%m-%d"),
+            #             flex_days_before_departure=0,
+            #             flex_days_after_departure=step_days,
+            #             return_date=current_inbound_departure_date_from.strftime("%Y-%m-%d"),
+            #             flex_days_before_return=0,
+            #             flex_days_after_return=step_days
+            #         )
+            #
+            #         if round_flights is not None and len(round_flights) > 0 and round_flights[0] is not None and len(
+            #                 round_flights[0]) > 0:
+            #             outbound_flights.update([create_flight(flight) for flight in round_flights[0]])
+            #
+            #         if round_flights is not None and len(round_flights) > 1 and round_flights[1] is not None and len(
+            #                 round_flights[1]) > 0:
+            #             inbound_flights.update([create_flight(flight) for flight in round_flights[1]])
+            #
+            #         current_inbound_departure_date_from = current_inbound_departure_date_to
+            #
+            #     current_outbound_departure_date_from = current_outbound_departure_date_to
 
         def search_wzz(parameters_wzz: SearchFlightParameters):
             timetable = self.wizzair.get_timetable(
@@ -340,7 +365,7 @@ class FlightDB:
 
         if parameters.destination is None:
             def create_parameters_for_destination(destination: str) -> SearchFlightParameters:
-                parameters_current_destination = parameters
+                parameters_current_destination = copy.copy(parameters)
                 parameters_current_destination.destination = destination
                 return parameters_current_destination
 
