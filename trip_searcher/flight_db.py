@@ -237,32 +237,6 @@ class FlightDB:
         outbound_flights = set()
         inbound_flights = set()
 
-        # def create_flight_ryr(flight):
-        #     return Flight(
-        #         origin=flight.origin,
-        #         destination=flight.destination,
-        #         departure_date=flight.departure_date,
-        #         arrival_date=flight.arrival_date,
-        #         airline='Ryanair',
-        #         price=Price(flight.price.currency, flight.price.value)
-        #     )
-        #
-        # current_origin_round_trips = self.ryanair.get_flights(
-        #     origin=origin,
-        #     outbound_departure_date_from=outbound_departure_date_from,
-        #     outbound_departure_date_to=outbound_departure_date_to,
-        #     inbound_departure_date_from=inbound_departure_date_from,
-        #     inbound_departure_date_to=inbound_departure_date_to,
-        #     currency='CZK',
-        #     adult_pax_count=1,
-        #     market='cs-cz',
-        #     duration_from=0,
-        #     duration_to=3
-        # )
-
-        # outbound_flights += [create_flight_ryr(outbound) for outbound, _ in current_origin_round_trips]
-        # inbound_flights += [create_flight_ryr(inbound) for _, inbound in current_origin_round_trips]
-
         def search_ryr(parameters_ryr: FlightSearchParameters):
             def create_flight(flight):
                 return Flight(
@@ -369,19 +343,19 @@ class FlightDB:
                 parameters_current_destination.destination = destination
                 return parameters_current_destination
 
-            # route_map_wzz = self.wizzair.get_map()
-            # if parameters.origin in route_map_wzz[1]:
-            #     destinations_wzz = route_map_wzz[1][parameters.origin]
-            #     for destination in destinations_wzz:
-            #         # parameters_cur_dest = FlightSearchParameters()
-            #         # parameters_cur_dest.origin = parameters.origin
-            #         # parameters_cur_dest.outbound_departure_date_from = parameters.outbound_departure_date_from
-            #         # parameters_cur_dest.outbound_departure_date_to = parameters.outbound_departure_date_to
-            #         # parameters_cur_dest.destination = destination
-            #         # parameters_cur_dest.inbound_departure_date_from = parameters.inbound_departure_date_from
-            #         # parameters_cur_dest.inbound_departure_date_to = parameters.inbound_departure_date_to
-            #         parameters_current_destination = create_parameters_for_destination(destination)
-            #         search_wzz(parameters_wzz=parameters_current_destination)
+            route_map_wzz = self.wizzair.get_map()
+            if parameters.origin in route_map_wzz[1]:
+                destinations_wzz = route_map_wzz[1][parameters.origin]
+                for destination in destinations_wzz:
+                    # parameters_cur_dest = FlightSearchParameters()
+                    # parameters_cur_dest.origin = parameters.origin
+                    # parameters_cur_dest.outbound_departure_date_from = parameters.outbound_departure_date_from
+                    # parameters_cur_dest.outbound_departure_date_to = parameters.outbound_departure_date_to
+                    # parameters_cur_dest.destination = destination
+                    # parameters_cur_dest.inbound_departure_date_from = parameters.inbound_departure_date_from
+                    # parameters_cur_dest.inbound_departure_date_to = parameters.inbound_departure_date_to
+                    parameters_current_destination = create_parameters_for_destination(destination)
+                    search_wzz(parameters_wzz=parameters_current_destination)
 
             destinations_ryr = self.ryanair.get_destinations(parameters.origin)
             for destination in destinations_ryr:

@@ -22,8 +22,14 @@ class TelegramBot:
             response = self.trip_searcher.search(query)
             await message.answer(response)
 
+    async def remove_webhook(self):
+        # Delete webhook before starting polling
+        await self.bot.delete_webhook()
+        print("Webhook deleted successfully!")
+
     def run(self):
         print("Bot is running...")
+        # asyncio.run(self.remove_webhook())
         asyncio.run(self.dp.start_polling(self.bot))
 
 

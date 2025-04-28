@@ -1,8 +1,9 @@
+import random
 from city_db.city_db import CityDB
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from flight_db import FlightDB, FlightSearchParameters, Price
+from trip_searcher.flight_db import FlightDB, FlightSearchParameters, Price
 from datetime import datetime, timedelta
 
 
@@ -113,9 +114,11 @@ class TripSearcher:
 
         response = ""
 
-        for round_trip in round_trips:
-            outbound_flight = round_trip[0]
-            inbound_flight = round_trip[1]
+        round_trips.sort(key=lambda round_flight: round_flight[0].price.value + round_flight[1].price.value)
+
+        for i in range(min(10, len(round_trips))):
+            outbound_flight = round_trips[i][0]
+            inbound_flight = round_trips[i][1]
 
             response += f"Trip | Outbound flight: {str(outbound_flight)} | Inbound flight: {str(inbound_flight)}\n\n"
 
