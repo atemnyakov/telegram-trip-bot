@@ -1,4 +1,6 @@
 import asyncio
+from datetime import datetime
+
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from trip_searcher.trip_searcher import TripSearcher
@@ -19,7 +21,27 @@ class TelegramBot:
         @self.dp.message()
         async def cmd_start(message: Message):
             query = message.text
-            response = self.trip_searcher.search(query)
+
+            round_trips = self.trip_searcher.search(query)
+
+            response = ""
+
+            max_number_of_trips = 15
+
+            number_of_found_trips = len(round_trips)
+
+            if len(round_trips) <= max_number_of_trips:
+                response += f"Я нашёл для тебя {number_of_found_trips} вариантов! Вот они:\n\n\n"
+            else:
+                response += f"Я нашёл для тебя {number_of_found_trips} вариантов, но из-за ограничения Телеграма могу показать только {max_number_of_trips}. Вот самые дешёвые из найдённых:\n\n\n"
+
+            for i in range(min(number_of_found_trips, max_number_of_trips)):
+                outbound_flight = round_trips[i][0]
+                inbound_flight = round_trips[i][1]
+
+                response += f"Маршрут туда: {outbound_flight.origin} - {outbound_flight.destination}\nАвиакомпания: {outbound_flight.airline}\nДата: {outbound_flight.departure_date.date()}\nЦена: {outbound_flight.price}\n\n"
+                response += f"Маршрут назад: {inbound_flight.origin} - {inbound_flight.destination}\nАвиакомпания: {inbound_flight.airline}\nДата: {inbound_flight.departure_date.date()}\nЦена: {inbound_flight.price}\n\n\n"
+
             await message.answer(response)
 
     async def remove_webhook(self):

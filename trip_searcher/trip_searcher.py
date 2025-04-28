@@ -1,9 +1,11 @@
 import random
+from typing import List, Tuple
+
 from city_db.city_db import CityDB
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from trip_searcher.flight_db import FlightDB, FlightSearchParameters, Price
+from trip_searcher.flight_db import FlightDB, FlightSearchParameters, Price, Flight
 from datetime import datetime, timedelta
 
 
@@ -37,7 +39,7 @@ class TripSearcher:
         self.flight_db.load_airport_codes()
         # self.flight_db.load_flights()
 
-    def search(self, query: str):
+    def search(self, query: str) -> List[Tuple[Flight, Flight]]:
         parsed_route = self.route_parser.predict(query)
         parsed_dates = self.date_classifier.predict(query)
         parsed_price = self.price_parser.predict(query)
@@ -112,17 +114,9 @@ class TripSearcher:
                 self.flight_db.fetch_flights(flight_search_parameters)
                 round_trips.extend(self.flight_db.get_flights(flight_search_parameters))
 
-        response = ""
-
         round_trips.sort(key=lambda round_flight: round_flight[0].price.value + round_flight[1].price.value)
 
-        for i in range(min(10, len(round_trips))):
-            outbound_flight = round_trips[i][0]
-            inbound_flight = round_trips[i][1]
-
-            response += f"Trip | Outbound flight: {str(outbound_flight)} | Inbound flight: {str(inbound_flight)}\n\n"
-
-        return response
+        return round_trips
 
 
 if __name__ == '__main__':

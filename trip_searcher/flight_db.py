@@ -332,10 +332,10 @@ class FlightDB:
                 )
 
             nonlocal outbound_flights
-            outbound_flights.update([create_flight(flight) for flight in timetable[0]])
+            outbound_flights.update([create_flight(flight) for flight in timetable[0] if flight.price.value > 0])
 
             nonlocal inbound_flights
-            inbound_flights.update([create_flight(flight) for flight in timetable[1]])
+            inbound_flights.update([create_flight(flight) for flight in timetable[1] if flight.price.value > 0])
 
         if parameters.destination is None:
             def create_parameters_for_destination(destination: str) -> FlightSearchParameters:
