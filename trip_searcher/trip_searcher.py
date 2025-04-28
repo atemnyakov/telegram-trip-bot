@@ -2,7 +2,7 @@ from city_db.city_db import CityDB
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from flight_db import FlightDB, SearchFlightParameters, Price
+from flight_db import FlightDB, FlightSearchParameters, Price
 from datetime import datetime, timedelta
 
 
@@ -86,30 +86,30 @@ class TripSearcher:
                     destination_city_en = cities_ru_to_en[destination_city_ru]
                     destination_code = self.flight_db.get_airport_code(destination_city_en)
 
-                    search_flight_parameters = SearchFlightParameters()
-                    search_flight_parameters.origin = origin_code
-                    search_flight_parameters.destination = destination_code
-                    search_flight_parameters.outbound_departure_date_from = departure_date_from
-                    search_flight_parameters.outbound_departure_date_to = departure_date_to
-                    search_flight_parameters.inbound_departure_date_from = return_date_from
-                    search_flight_parameters.inbound_departure_date_to = return_date_to
-                    search_flight_parameters.max_price = price
-                    search_flight_parameters.max_trip_duration = 3
+                    flight_search_parameters = FlightSearchParameters()
+                    flight_search_parameters.origin = origin_code
+                    flight_search_parameters.destination = destination_code
+                    flight_search_parameters.outbound_departure_date_from = departure_date_from
+                    flight_search_parameters.outbound_departure_date_to = departure_date_to
+                    flight_search_parameters.inbound_departure_date_from = return_date_from
+                    flight_search_parameters.inbound_departure_date_to = return_date_to
+                    flight_search_parameters.max_price = price
+                    flight_search_parameters.max_trip_duration = 3
 
-                    self.flight_db.fetch_flights(search_flight_parameters)
-                    round_trips.extend(self.flight_db.get_flights(search_flight_parameters))
+                    self.flight_db.fetch_flights(flight_search_parameters)
+                    round_trips.extend(self.flight_db.get_flights(flight_search_parameters))
             else:
-                search_flight_parameters = SearchFlightParameters()
-                search_flight_parameters.origin = origin_code
-                search_flight_parameters.outbound_departure_date_from = departure_date_from
-                search_flight_parameters.outbound_departure_date_to = departure_date_to
-                search_flight_parameters.inbound_departure_date_from = return_date_from
-                search_flight_parameters.inbound_departure_date_to = return_date_to
-                search_flight_parameters.max_price = price
-                search_flight_parameters.max_trip_duration = 3
+                flight_search_parameters = FlightSearchParameters()
+                flight_search_parameters.origin = origin_code
+                flight_search_parameters.outbound_departure_date_from = departure_date_from
+                flight_search_parameters.outbound_departure_date_to = departure_date_to
+                flight_search_parameters.inbound_departure_date_from = return_date_from
+                flight_search_parameters.inbound_departure_date_to = return_date_to
+                flight_search_parameters.max_price = price
+                flight_search_parameters.max_trip_duration = 3
 
-                self.flight_db.fetch_flights(search_flight_parameters)
-                round_trips.extend(self.flight_db.get_flights(search_flight_parameters))
+                self.flight_db.fetch_flights(flight_search_parameters)
+                round_trips.extend(self.flight_db.get_flights(flight_search_parameters))
 
         response = ""
 

@@ -92,7 +92,7 @@ class Price:
         return cls(data["currency"], data["value"])
 
 
-class SearchFlightParameters:
+class FlightSearchParameters:
     def __init__(self):
         self.origin: str | None = None
         self.outbound_departure_date_from: datetime | None = None
@@ -233,7 +233,7 @@ class FlightDB:
         except:
             return False
 
-    def fetch_flights(self, parameters: SearchFlightParameters) -> None:
+    def fetch_flights(self, parameters: FlightSearchParameters) -> None:
         outbound_flights = set()
         inbound_flights = set()
 
@@ -263,7 +263,7 @@ class FlightDB:
         # outbound_flights += [create_flight_ryr(outbound) for outbound, _ in current_origin_round_trips]
         # inbound_flights += [create_flight_ryr(inbound) for _, inbound in current_origin_round_trips]
 
-        def search_ryr(parameters_ryr: SearchFlightParameters):
+        def search_ryr(parameters_ryr: FlightSearchParameters):
             def create_flight(flight):
                 return Flight(
                     origin=flight.origin,
@@ -338,7 +338,7 @@ class FlightDB:
             #
             #     current_outbound_departure_date_from = current_outbound_departure_date_to
 
-        def search_wzz(parameters_wzz: SearchFlightParameters):
+        def search_wzz(parameters_wzz: FlightSearchParameters):
             timetable = self.wizzair.get_timetable(
                 origin=parameters_wzz.origin,
                 destination=parameters_wzz.destination,
@@ -364,7 +364,7 @@ class FlightDB:
             inbound_flights.update([create_flight(flight) for flight in timetable[1]])
 
         if parameters.destination is None:
-            def create_parameters_for_destination(destination: str) -> SearchFlightParameters:
+            def create_parameters_for_destination(destination: str) -> FlightSearchParameters:
                 parameters_current_destination = copy.copy(parameters)
                 parameters_current_destination.destination = destination
                 return parameters_current_destination
@@ -373,7 +373,7 @@ class FlightDB:
             # if parameters.origin in route_map_wzz[1]:
             #     destinations_wzz = route_map_wzz[1][parameters.origin]
             #     for destination in destinations_wzz:
-            #         # parameters_cur_dest = SearchFlightParameters()
+            #         # parameters_cur_dest = FlightSearchParameters()
             #         # parameters_cur_dest.origin = parameters.origin
             #         # parameters_cur_dest.outbound_departure_date_from = parameters.outbound_departure_date_from
             #         # parameters_cur_dest.outbound_departure_date_to = parameters.outbound_departure_date_to
@@ -401,7 +401,7 @@ class FlightDB:
         converted_amount = c.convert(amount, from_currency, to_currency)
         return converted_amount
 
-    def get_flights(self, parameters: SearchFlightParameters) -> Set[Tuple[Flight, Flight]]:
+    def get_flights(self, parameters: FlightSearchParameters) -> Set[Tuple[Flight, Flight]]:
         trips: Set[Tuple[Flight, Flight]] = set()
 
         for outbound_flight in self.flights:
