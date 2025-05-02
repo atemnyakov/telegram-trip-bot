@@ -1,4 +1,4 @@
-from NNParserBase.NeuralParserBase import NeuralParserBase
+from NNParserBase.neural_parser_base import NeuralParserBase
 from datetime import datetime
 from typing import Dict, Optional, List
 from transformers import pipeline
