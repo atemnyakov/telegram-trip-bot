@@ -1,12 +1,24 @@
+# Standard library imports
 import os
-from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, pipeline, DataCollatorForTokenClassification, EarlyStoppingCallback
-from datasets import Dataset
-from typing import List, Dict, Optional
-import torch
-import torch.nn.functional as F
 import json
 
+# Third-party imports
+import torch
+from transformers import (
+    AutoTokenizer,
+    AutoModelForTokenClassification,
+    TrainingArguments,
+    Trainer,
+    pipeline,
+    DataCollatorForTokenClassification,
+    EarlyStoppingCallback
+)
+from datasets import Dataset
+from typing import List, Dict, Optional
+
+# Local imports
 from text_to_number_converter import TextToNumberConverter
+
 
 
 class PriceParser:
