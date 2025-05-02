@@ -36,7 +36,7 @@ class TripSearcher:
         self.flight_db.load_airport_codes()
         # self.flight_db.load_flights()
 
-    def search(self, query: str):
+    def search(self, query: str) -> List[Tuple[Flight, Flight]]:
         parsed_route = self.route_parser.predict(query)
         parsed_dates = self.date_classifier.predict(query)
         parsed_price = self.price_parser.predict(query)
@@ -134,14 +134,7 @@ class TripSearcher:
         round_trips = list(self.flight_db.get_flights(multi_origin_dest_search_params))
         round_trips.sort(key=lambda flight_pair: sum(flight.price.value for flight in flight_pair))
 
-        # Format response
-        response = ""
-        for i in range(min(10, len(round_trips))):
-            outbound_flight = round_trips[i][0]
-            inbound_flight = round_trips[i][1]
-            response += f"Trip | Outbound flight: {str(outbound_flight)} | Inbound flight: {str(inbound_flight)}\n\n"
-
-        return response
+        return round_trips
 
 
 if __name__ == '__main__':
