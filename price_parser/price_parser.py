@@ -6,7 +6,7 @@ import os
 
 class PriceParser(NeuralParserBase):
     def __init__(self):
-        super().__init__(os.path.dirname(__file__))
+        super().__init__(path=os.path.dirname(__file__))
 
     def replace_currency_words_with_codes(self, query: str):
         words2codes = {

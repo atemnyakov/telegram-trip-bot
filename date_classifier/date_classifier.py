@@ -2,13 +2,13 @@ from NNParserBase.neural_parser_base import NeuralParserBase
 from datetime import datetime
 from typing import Dict, Optional, List
 from transformers import pipeline
-from calendar import calendar
+import calendar
 import os
 
 
 class DateClassifier(NeuralParserBase):
     def __init__(self):
-        super().__init__(os.path.dirname(__file__))
+        super().__init__(path=os.path.dirname(__file__))
 
     def create_tokens(self):
         months_in_russian = [
@@ -17,7 +17,7 @@ class DateClassifier(NeuralParserBase):
         ]
         dates = []
         for month in range(1, 13):
-            days_in_month = calendar.monthrange(2024, month)[1]
+            days_in_month = calendar.monthrange(2025, month)[1]
             for day in range(1, days_in_month + 1):
                 dates.append(f"{day} {months_in_russian[month - 1]}")
         return dates

@@ -8,25 +8,31 @@ from transformers import TrainingArguments, Trainer, DataCollatorForTokenClassif
 
 
 class NeuralParserBase:
-    def __init__(self, path: str, trainer_class = Trainer):
+    def __init__(self, path: str, num_train_epoch: int = 5, per_device_train_batch_size: int = 4, trainer_class = Trainer):
         self.path: str = path
         self.model: AutoModelForTokenClassification | None = None
         self.tokenizer: AutoTokenizer | None = None
         self.input_max_length = 32
+        self.num_train_epoch = num_train_epoch
+        self.per_device_train_batch_size = per_device_train_batch_size
         self.trainer_class = trainer_class
 
     def model_path(self):
         return os.path.join(self.path, 'model')
 
-    def datasets_path(self):
-        return os.path.join(self.path, 'datasets')
+    # def datasets_path(self):
+    #     return os.path.join(self.path, 'datasets')
+
+    def get_dataset_json(self):
+        with open(os.path.join(os.path.join(self.path, 'datasets'), "dataset.json"), "r", encoding="utf-8") as f:
+            dataset_json = json.load(f)
+        return dataset_json
 
     def create_tokens(self):
         raise NotImplementedError  # Must be implemented in derived classes
 
     def learn(self) -> None:
-        with open(os.path.join(self.datasets_path(), "dataset.json"), "r", encoding="utf-8") as f:
-            dataset_json = json.load(f)
+        dataset_json = self.get_dataset_json()
 
         # Convert to Hugging Face Dataset
         dataset = Dataset.from_list(dataset_json)
@@ -87,8 +93,8 @@ class NeuralParserBase:
         # Training Arguments
         training_args = TrainingArguments(
             output_dir="../../results",
-            num_train_epochs=5,
-            per_device_train_batch_size=4,
+            num_train_epochs=self.num_train_epoch,
+            per_device_train_batch_size=self.per_device_train_batch_size,
             logging_dir="./logs",
             logging_steps=1,
             save_strategy="no",

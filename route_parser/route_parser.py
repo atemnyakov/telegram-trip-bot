@@ -20,19 +20,13 @@ from route_parser.route_parser_trainer import RouteParserTrainer
 
 class RouteParser(NeuralParserBase):
     def __init__(self):
-        super().__init__(path=os.path.dirname(__file__), trainer_class=RouteParserTrainer)
+        super().__init__(path=os.path.dirname(__file__), num_train_epoch=5, per_device_train_batch_size=2, trainer_class=RouteParserTrainer)
 
         city_name_database = CityDB()
         city_name_database.load(filename='out\cities_db.json')
         self.city_names = city_name_database.get_cities('ru')
 
         self.morph = pymorphy3.MorphAnalyzer()
-
-    def create_tokens(self):
-        return self.city_names
-
-    def get_label_list(self) -> List[str]:
-        return ["O", "B-DEP", "B-DEST"]
 
     def add_space_before_punctuation(self, text):
         return re.sub(r"(\S)([.,!?;:])", r"\1 \2", text)
@@ -104,9 +98,8 @@ class RouteParser(NeuralParserBase):
 
         return " ".join(normalized_words)
 
-    def learn(self) -> None:
-        dataset_path = os.path.join(self.datasets_path(), "dataset.json")
-        with open(dataset_path, "r", encoding="utf-8") as f:
+    def get_dataset_json(self):
+        with open(os.path.join(os.path.join(self.path, 'datasets'), "dataset.json"), "r", encoding="utf-8") as f:
             dataset_json = json.load(f)
 
         # Preprocess: normalize tokens in dataset
@@ -117,11 +110,13 @@ class RouteParser(NeuralParserBase):
                     entry["tokens"][i] = normalized_city_name
             print(entry["tokens"])
 
-        # Save preprocessed dataset back (or pass it directly if you modify NeuralParserBase to accept a dataset)
-        with open(dataset_path, "w", encoding="utf-8") as f:
-            json.dump(dataset_json, f, ensure_ascii=False, indent=2)
+        return dataset_json
 
-        super().learn()
+    def create_tokens(self):
+        return self.city_names
+
+    def get_label_list(self) -> List[str]:
+        return ["O", "B-DEP", "B-DEST"]
 
     def predict(self, text: str) -> Dict[str, List[str]]:
         self.model.eval()
