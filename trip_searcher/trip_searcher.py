@@ -1,9 +1,22 @@
+from datetime import datetime, timedelta
+from typing import List, Tuple
+
+# Imports related to databases and data parsing
 from city_db.city_db import CityDB
+from flight_db.flight_db import (
+    FlightDB,
+    FlightSearchParametersBase,
+    SingleOriginDestinationSearchParameters,
+    MultiOriginDestinationSearchParameters,
+    Price,
+    Flight
+)
+
+# Imports related to classifiers and parsers
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from flight_db.flight_db import FlightDB, FlightSearchParametersBase, SingleOriginDestinationSearchParameters, MultiOriginDestinationSearchParameters, Price
-from datetime import datetime, timedelta
+
 
 
 class TripSearcher:
