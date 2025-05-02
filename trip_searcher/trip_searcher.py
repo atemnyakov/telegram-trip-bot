@@ -131,7 +131,7 @@ class TripSearcher:
                 multi_origin_dest_search_params.destinations.append(destination_code)
 
         # Fetch flights for multi-origin-destination search
-        round_trips = self.flight_db.get_flights(multi_origin_dest_search_params)
+        round_trips = list(self.flight_db.get_flights(multi_origin_dest_search_params))
         round_trips.sort(key=lambda flight_pair: sum(flight.price.value for flight in flight_pair))
 
         # Format response
