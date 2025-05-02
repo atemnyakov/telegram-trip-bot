@@ -41,109 +41,104 @@ class TripSearcher:
         parsed_dates = self.date_classifier.predict(query)
         parsed_price = self.price_parser.predict(query)
 
-        origin_cities_ru = [origin_city for origin_city in parsed_route['B-DEP'] if 'B-DEP' in parsed_route]
+        # Parse cities
+        origin_cities_ru = [city for city in parsed_route.get('B-DEP', [])]
+        destination_cities_ru = [city for city in parsed_route.get('B-DEST', [])]
 
-        destination_cities_ru = [destination_city for destination_city in parsed_route['B-DEST'] if 'B-DEST' in parsed_route]
+        # Initialize translation dictionaries
+        cities_ru_to_en = {}
+        cities_en_to_ru = {}
+        codes_to_cities_en = {}
+        cities_en_to_codes = {}
 
-        cities_ru_to_en = dict()
-        cities_en_to_ru = dict()
-        
-        codes_to_cities_en = dict()
-        cities_en_to_codes = dict()
+        # Collect all unique cities
+        cities_ru = set(origin_cities_ru + destination_cities_ru)
 
-        cities_ru = set()
-        cities_ru.update(origin_cities_ru)
-        cities_ru.update(destination_cities_ru)
-
+        # Translate cities
         for city_ru in cities_ru:
             city_en = self.city_db.translate_city_name(city_name=city_ru, target_language_code='en')
             if city_en:
                 cities_ru_to_en[city_ru] = city_en
                 cities_en_to_ru[city_en] = city_ru
 
-        # Get the current date
-        departure_date_from = datetime.now()
-        if "B-STARTDATE" in parsed_dates:
-            departure_date_from = parsed_dates["B-STARTDATE"]
-
-        departure_date_to = departure_date_from + timedelta(days=15)
-        if "B-ENDDATE" in parsed_dates:
-            departure_date_to = parsed_dates["B-ENDDATE"]
-
+        # Get dates
+        departure_date_from = parsed_dates.get("B-STARTDATE", datetime.now())
+        departure_date_to = parsed_dates.get("B-ENDDATE", departure_date_from + timedelta(days=15))
         return_date_from = departure_date_from
-
         return_date_to = departure_date_to
 
+        # Parse price
         price = None
-        if parsed_price is not None:
+        if parsed_price:
             price_value, price_currency = parsed_price.split()
             price = Price(currency=price_currency, value=float(price_value))
 
-        round_trips = []
+        # Initialize flight search parameters
+        flight_search_params_base = FlightSearchParametersBase()
+        flight_search_params_base.outbound_departure_date_from = departure_date_from
+        flight_search_params_base.outbound_departure_date_to = departure_date_to
+        flight_search_params_base.inbound_departure_date_from = return_date_from
+        flight_search_params_base.inbound_departure_date_to = return_date_to
+        flight_search_params_base.max_price = price
+        flight_search_params_base.max_trip_duration = 3
 
-        flight_search_parameters_base = FlightSearchParametersBase()
-        flight_search_parameters_base.outbound_departure_date_from = departure_date_from
-        flight_search_parameters_base.outbound_departure_date_to = departure_date_to
-        flight_search_parameters_base.inbound_departure_date_from = return_date_from
-        flight_search_parameters_base.inbound_departure_date_to = return_date_to
-        flight_search_parameters_base.max_price = price
-        flight_search_parameters_base.max_trip_duration = 3
-
+        # Create single origin-destination search parameters
         single_origin_dest_search_params = SingleOriginDestinationSearchParameters()
-        for attr, value in flight_search_parameters_base.__dict__.items():
+        for attr, value in flight_search_params_base.__dict__.items():
             setattr(single_origin_dest_search_params, attr, value)
 
+        # Search for flights
         for origin_city_ru in origin_cities_ru:
             origin_city_en = cities_ru_to_en[origin_city_ru]
             origin_code = self.flight_db.get_airport_code(origin_city_en)
-            
             codes_to_cities_en[origin_code] = origin_city_en
             cities_en_to_codes[origin_city_en] = origin_code
-            
-            if len(destination_cities_ru) > 0:
+
+            # Search for destinations
+            if destination_cities_ru:
                 for destination_city_ru in destination_cities_ru:
                     destination_city_en = cities_ru_to_en[destination_city_ru]
                     destination_code = self.flight_db.get_airport_code(destination_city_en)
-
                     codes_to_cities_en[destination_code] = destination_city_en
                     cities_en_to_codes[destination_city_en] = destination_code
 
+                    # Set origin and destination for the search
                     single_origin_dest_search_params.origin = origin_code
                     single_origin_dest_search_params.destination = destination_code
-
                     self.flight_db.fetch_flights(single_origin_dest_search_params)
             else:
+                # Only origin provided, no destination
                 single_origin_dest_search_params.origin = origin_code
                 single_origin_dest_search_params.destination = None
-
                 self.flight_db.fetch_flights(single_origin_dest_search_params)
 
+        # Create multi-origin-destination search parameters
         multi_origin_dest_search_params = MultiOriginDestinationSearchParameters()
-        for attr, value in flight_search_parameters_base.__dict__.items():
+        for attr, value in flight_search_params_base.__dict__.items():
             setattr(multi_origin_dest_search_params, attr, value)
 
+        # Add origins to multi-origin search
         for origin_city_ru in origin_cities_ru:
             origin_city_en = cities_ru_to_en[origin_city_ru]
-            origin_code = cities_en_to_codes[origin_city_en]
-
+            origin_code = cities_en_to_codes.get(origin_city_en)
             multi_origin_dest_search_params.origins.append(origin_code)
 
-        if len(destination_cities_ru) > 0:
+        # Add destinations to multi-origin search if present
+        if destination_cities_ru:
             for destination_city_ru in destination_cities_ru:
                 destination_city_en = cities_ru_to_en[destination_city_ru]
-                destination_code = cities_en_to_codes[destination_city_en]
-
+                destination_code = cities_en_to_codes.get(destination_city_en)
                 multi_origin_dest_search_params.destinations.append(destination_code)
 
-        round_trips.extend(self.flight_db.get_flights(multi_origin_dest_search_params))
-        round_trips.sort(key=lambda round_flight: round_flight[0].price.value + round_flight[1].price.value)
+        # Fetch flights for multi-origin-destination search
+        round_trips = self.flight_db.get_flights(multi_origin_dest_search_params)
+        round_trips.sort(key=lambda flight_pair: sum(flight.price.value for flight in flight_pair))
 
+        # Format response
         response = ""
-
         for i in range(min(10, len(round_trips))):
             outbound_flight = round_trips[i][0]
             inbound_flight = round_trips[i][1]
-
             response += f"Trip | Outbound flight: {str(outbound_flight)} | Inbound flight: {str(inbound_flight)}\n\n"
 
         return response
