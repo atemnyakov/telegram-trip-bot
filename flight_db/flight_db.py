@@ -3,9 +3,7 @@ import json
 import os
 from datetime import datetime, timedelta
 from typing import Set, Tuple, Dict, Optional
-
 from currency_converter import CurrencyConverter
-
 from ryanair import Ryanair
 from wizzair import Wizzair
 
@@ -92,17 +90,29 @@ class Price:
         return cls(data["currency"], data["value"])
 
 
-class FlightSearchParameters:
+class FlightSearchParametersBase:
     def __init__(self):
-        self.origin: str | None = None
         self.outbound_departure_date_from: datetime | None = None
         self.outbound_departure_date_to: datetime | None = None
-        self.destination: str | None = None
         self.inbound_departure_date_from: datetime | None = None
         self.inbound_departure_date_to: datetime | None = None
         self.max_price: Price | None = None
         self.min_trip_duration: int = 2
         self.max_trip_duration: int = 5
+
+
+class SingleOriginDestinationSearchParameters(FlightSearchParametersBase):
+    def __init__(self):
+        super().__init__()
+        self.origin: str | None = None
+        self.destination: str | None = None
+
+
+class MultiOriginDestinationSearchParameters(FlightSearchParametersBase):
+    def __init__(self):
+        super().__init__()
+        self.origins: list[str] = []
+        self.destinations: list[str] = []
 
 
 class Flight:
@@ -233,11 +243,11 @@ class FlightDB:
         except:
             return False
 
-    def fetch_flights(self, parameters: FlightSearchParameters) -> None:
+    def fetch_flights(self, parameters: SingleOriginDestinationSearchParameters) -> None:
         outbound_flights = set()
         inbound_flights = set()
 
-        def search_ryr(parameters_ryr: FlightSearchParameters):
+        def search_ryr(parameters_ryr: SingleOriginDestinationSearchParameters):
             def create_flight(flight):
                 return Flight(
                     origin=flight.origin,
@@ -312,7 +322,7 @@ class FlightDB:
             #
             #     current_outbound_departure_date_from = current_outbound_departure_date_to
 
-        def search_wzz(parameters_wzz: FlightSearchParameters):
+        def search_wzz(parameters_wzz: SingleOriginDestinationSearchParameters):
             timetable = self.wizzair.get_timetable(
                 origin=parameters_wzz.origin,
                 destination=parameters_wzz.destination,
@@ -338,7 +348,7 @@ class FlightDB:
             inbound_flights.update([create_flight(flight) for flight in timetable[1]])
 
         if parameters.destination is None:
-            def create_parameters_for_destination(destination: str) -> FlightSearchParameters:
+            def create_parameters_for_destination(destination: str) -> SingleOriginDestinationSearchParameters:
                 parameters_current_destination = copy.copy(parameters)
                 parameters_current_destination.destination = destination
                 return parameters_current_destination
@@ -375,17 +385,17 @@ class FlightDB:
         converted_amount = c.convert(amount, from_currency, to_currency)
         return converted_amount
 
-    def get_flights(self, parameters: FlightSearchParameters) -> Set[Tuple[Flight, Flight]]:
+    def get_flights(self, parameters: MultiOriginDestinationSearchParameters) -> Set[Tuple[Flight, Flight]]:
         trips: Set[Tuple[Flight, Flight]] = set()
 
         for outbound_flight in self.flights:
-            if outbound_flight.origin != parameters.origin:
+            if outbound_flight.origin not in parameters.origins:
                 continue
 
             if outbound_flight.departure_date < parameters.outbound_departure_date_from or outbound_flight.departure_date > parameters.outbound_departure_date_to:
                 continue
 
-            if not parameters.destination is None and outbound_flight.destination != parameters.destination:
+            if len(parameters.destinations) > 0 and outbound_flight.destination not in parameters.destinations:
                 continue
 
             for inbound_flight in self.flights:
@@ -395,7 +405,7 @@ class FlightDB:
                 if inbound_flight.departure_date < outbound_flight.departure_date or inbound_flight.departure_date < parameters.inbound_departure_date_from or inbound_flight.departure_date > parameters.inbound_departure_date_to:
                     continue
 
-                if inbound_flight.destination != parameters.origin:
+                if inbound_flight.destination not in parameters.origins:
                     continue
 
                 if parameters.max_price is not None:

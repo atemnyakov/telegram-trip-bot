@@ -34,5 +34,5 @@ class TelegramBot:
 
 
 if __name__ == "__main__":
-    bot = TelegramBot(token="7999001822:AAHwCcbv_ptDNg0QHdgi7UUa8lSrYaiJT5U")
+    bot = TelegramBot(token="7999001822:AAGxIGE9t-I207pcOnOieITv9PBaggTvYGc")
     bot.run()

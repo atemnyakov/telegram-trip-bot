@@ -1,9 +1,8 @@
-import random
 from city_db.city_db import CityDB
 from date_classifier.date_classifier import DateClassifier
 from price_parser.price_parser import PriceParser
 from route_parser.route_parser import RouteParser
-from trip_searcher.flight_db import FlightDB, FlightSearchParameters, Price
+from flight_db.flight_db import FlightDB, FlightSearchParametersBase, SingleOriginDestinationSearchParameters, MultiOriginDestinationSearchParameters, Price
 from datetime import datetime, timedelta
 
 
@@ -47,6 +46,10 @@ class TripSearcher:
         destination_cities_ru = [destination_city for destination_city in parsed_route['B-DEST'] if 'B-DEST' in parsed_route]
 
         cities_ru_to_en = dict()
+        cities_en_to_ru = dict()
+        
+        codes_to_cities_en = dict()
+        cities_en_to_codes = dict()
 
         cities_ru = set()
         cities_ru.update(origin_cities_ru)
@@ -56,8 +59,7 @@ class TripSearcher:
             city_en = self.city_db.translate_city_name(city_name=city_ru, target_language_code='en')
             if city_en:
                 cities_ru_to_en[city_ru] = city_en
-
-        update_flight_database = True
+                cities_en_to_ru[city_en] = city_ru
 
         # Get the current date
         departure_date_from = datetime.now()
@@ -79,42 +81,64 @@ class TripSearcher:
 
         round_trips = []
 
+        flight_search_parameters_base = FlightSearchParametersBase()
+        flight_search_parameters_base.outbound_departure_date_from = departure_date_from
+        flight_search_parameters_base.outbound_departure_date_to = departure_date_to
+        flight_search_parameters_base.inbound_departure_date_from = return_date_from
+        flight_search_parameters_base.inbound_departure_date_to = return_date_to
+        flight_search_parameters_base.max_price = price
+        flight_search_parameters_base.max_trip_duration = 3
+
+        single_origin_dest_search_params = SingleOriginDestinationSearchParameters()
+        for attr, value in flight_search_parameters_base.__dict__.items():
+            setattr(single_origin_dest_search_params, attr, value)
+
         for origin_city_ru in origin_cities_ru:
             origin_city_en = cities_ru_to_en[origin_city_ru]
             origin_code = self.flight_db.get_airport_code(origin_city_en)
+            
+            codes_to_cities_en[origin_code] = origin_city_en
+            cities_en_to_codes[origin_city_en] = origin_code
+            
             if len(destination_cities_ru) > 0:
                 for destination_city_ru in destination_cities_ru:
                     destination_city_en = cities_ru_to_en[destination_city_ru]
                     destination_code = self.flight_db.get_airport_code(destination_city_en)
 
-                    flight_search_parameters = FlightSearchParameters()
-                    flight_search_parameters.origin = origin_code
-                    flight_search_parameters.destination = destination_code
-                    flight_search_parameters.outbound_departure_date_from = departure_date_from
-                    flight_search_parameters.outbound_departure_date_to = departure_date_to
-                    flight_search_parameters.inbound_departure_date_from = return_date_from
-                    flight_search_parameters.inbound_departure_date_to = return_date_to
-                    flight_search_parameters.max_price = price
-                    flight_search_parameters.max_trip_duration = 3
+                    codes_to_cities_en[destination_code] = destination_city_en
+                    cities_en_to_codes[destination_city_en] = destination_code
 
-                    self.flight_db.fetch_flights(flight_search_parameters)
-                    round_trips.extend(self.flight_db.get_flights(flight_search_parameters))
+                    single_origin_dest_search_params.origin = origin_code
+                    single_origin_dest_search_params.destination = destination_code
+
+                    self.flight_db.fetch_flights(single_origin_dest_search_params)
             else:
-                flight_search_parameters = FlightSearchParameters()
-                flight_search_parameters.origin = origin_code
-                flight_search_parameters.outbound_departure_date_from = departure_date_from
-                flight_search_parameters.outbound_departure_date_to = departure_date_to
-                flight_search_parameters.inbound_departure_date_from = return_date_from
-                flight_search_parameters.inbound_departure_date_to = return_date_to
-                flight_search_parameters.max_price = price
-                flight_search_parameters.max_trip_duration = 3
+                single_origin_dest_search_params.origin = origin_code
+                single_origin_dest_search_params.destination = None
 
-                self.flight_db.fetch_flights(flight_search_parameters)
-                round_trips.extend(self.flight_db.get_flights(flight_search_parameters))
+                self.flight_db.fetch_flights(single_origin_dest_search_params)
+
+        multi_origin_dest_search_params = MultiOriginDestinationSearchParameters()
+        for attr, value in flight_search_parameters_base.__dict__.items():
+            setattr(multi_origin_dest_search_params, attr, value)
+
+        for origin_city_ru in origin_cities_ru:
+            origin_city_en = cities_ru_to_en[origin_city_ru]
+            origin_code = cities_en_to_codes[origin_city_en]
+
+            multi_origin_dest_search_params.origins.append(origin_code)
+
+        if len(destination_cities_ru) > 0:
+            for destination_city_ru in destination_cities_ru:
+                destination_city_en = cities_ru_to_en[destination_city_ru]
+                destination_code = cities_en_to_codes[destination_city_en]
+
+                multi_origin_dest_search_params.destinations.append(destination_code)
+
+        round_trips.extend(self.flight_db.get_flights(multi_origin_dest_search_params))
+        round_trips.sort(key=lambda round_flight: round_flight[0].price.value + round_flight[1].price.value)
 
         response = ""
-
-        round_trips.sort(key=lambda round_flight: round_flight[0].price.value + round_flight[1].price.value)
 
         for i in range(min(10, len(round_trips))):
             outbound_flight = round_trips[i][0]
