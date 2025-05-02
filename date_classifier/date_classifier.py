@@ -6,6 +6,7 @@ import calendar
 
 # Third-party imports
 import torch
+import torch.nn.functional as F
 from transformers import (
     AutoTokenizer,
     AutoModelForTokenClassification,
@@ -16,7 +17,6 @@ from transformers import (
     EarlyStoppingCallback
 )
 from datasets import Dataset
-import torch.nn.functional as F
 from typing import List, Dict, Optional
 
 
