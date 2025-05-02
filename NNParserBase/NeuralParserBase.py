@@ -7,7 +7,7 @@ from datasets import Dataset
 from transformers import TrainingArguments, Trainer, DataCollatorForTokenClassification
 
 
-class NNParserBase:
+class NeuralParserBase:
     def __init__(self, path: str):
         self.path: str = path
         self.model: AutoModelForTokenClassification | None = None

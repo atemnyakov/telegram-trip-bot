@@ -1,10 +1,10 @@
-from NNParserBase.NNParserBase import NNParserBase
+from NNParserBase.NeuralParserBase import NeuralParserBase
 from typing import Optional, List
 from transformers import pipeline
 import os
 
 
-class PriceParser(NNParserBase):
+class PriceParser(NeuralParserBase):
     def __init__(self):
         super().__init__(os.path.dirname(__file__))
 

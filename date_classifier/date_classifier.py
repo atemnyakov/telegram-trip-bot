@@ -1,4 +1,4 @@
-from NNParserBase.NNParserBase import NNParserBase
+from NNParserBase.NeuralParserBase import NeuralParserBase
 from datetime import datetime
 from typing import Dict, Optional, List
 from transformers import pipeline
@@ -6,7 +6,7 @@ from calendar import calendar
 import os
 
 
-class DateClassifier(NNParserBase):
+class DateClassifier(NeuralParserBase):
     def __init__(self):
         super().__init__(os.path.dirname(__file__))
 
