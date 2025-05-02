@@ -1,15 +1,26 @@
+# Standard library imports
 import os.path
-
-from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer, pipeline, DataCollatorForTokenClassification
-from city_db.city_db import CityDB
-from datasets import Dataset
-from typing import List, Dict
-import torch
-import torch.nn.functional as F
 import json
-import pymorphy3
-from difflib import SequenceMatcher
 import re
+from difflib import SequenceMatcher
+
+# Third-party imports
+import torch
+from transformers import (
+    AutoTokenizer,
+    AutoModelForTokenClassification,
+    TrainingArguments,
+    Trainer,
+    pipeline,
+    DataCollatorForTokenClassification
+)
+from datasets import Dataset
+import pymorphy3
+
+# Local imports
+from city_db.city_db import CityDB
+from typing import List, Dict
+
 
 
 class RouteParser:
