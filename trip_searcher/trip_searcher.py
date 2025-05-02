@@ -145,7 +145,7 @@ class TripSearcher:
 
 
 if __name__ == '__main__':
-    trip_searcher = TripSearcher(train_route_parser=False, train_date_classifier=False, train_price_parser=False)
+    trip_searcher = TripSearcher(train_route_parser=True, train_date_classifier=True, train_price_parser=True)
     # trip_searcher.search(query='Куда я могу полететь из Праги или Вены на выходных?')
     trip_searcher.search(query='Куда я могу полететь из Праги или Вены с 1 мая по 1 июня с бюджетом до 100 евро?')
 

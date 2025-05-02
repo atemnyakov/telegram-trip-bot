@@ -8,11 +8,12 @@ from transformers import TrainingArguments, Trainer, DataCollatorForTokenClassif
 
 
 class NeuralParserBase:
-    def __init__(self, path: str):
+    def __init__(self, path: str, trainer_class = Trainer):
         self.path: str = path
         self.model: AutoModelForTokenClassification | None = None
         self.tokenizer: AutoTokenizer | None = None
         self.input_max_length = 32
+        self.trainer_class = trainer_class
 
     def model_path(self):
         return os.path.join(self.path, 'model')
@@ -99,7 +100,7 @@ class NeuralParserBase:
         data_collator = DataCollatorForTokenClassification(self.tokenizer)
 
         # Train the Model
-        trainer = Trainer(
+        trainer = self.trainer_class(
             model=self.model,
             args=training_args,
             train_dataset=tokenized_dataset,
