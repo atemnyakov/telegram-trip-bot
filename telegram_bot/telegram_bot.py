@@ -22,7 +22,13 @@ class TelegramBot:
         async def cmd_start(message: Message):
             query = message.text
 
-            round_trips = self.trip_searcher.search(query)
+            search_result = self.trip_searcher.search(query)
+
+            round_trips = search_result["round_trips"]
+            cities_ru_to_en = search_result["cities_ru_to_en"]
+            cities_en_to_ru = search_result["cities_en_to_ru"]
+            codes_to_cities_en = search_result["codes_to_cities_en"]
+            cities_en_to_codes = search_result["cities_en_to_codes"]
 
             response = ""
 
@@ -37,10 +43,23 @@ class TelegramBot:
 
             for i in range(min(number_of_found_trips, max_number_of_trips)):
                 outbound_flight = round_trips[i][0]
+                outbound_flight_origin_code = outbound_flight.origin
+                outbound_flight_origin_name_en = codes_to_cities_en[outbound_flight_origin_code]
+                outbound_flight_origin_name_ru = cities_en_to_ru[outbound_flight_origin_name_en]
+                outbound_flight_destination_code = outbound_flight.destination
+                outbound_flight_destination_name_en = codes_to_cities_en[outbound_flight_destination_code]
+                outbound_flight_destination_name_ru = cities_en_to_ru[outbound_flight_destination_name_en]
+                
                 inbound_flight = round_trips[i][1]
+                inbound_flight_origin_code = inbound_flight.origin
+                inbound_flight_origin_name_en = codes_to_cities_en[inbound_flight_origin_code]
+                inbound_flight_origin_name_ru = cities_en_to_ru[inbound_flight_origin_name_en]
+                inbound_flight_destination_code = inbound_flight.destination
+                inbound_flight_destination_name_en = codes_to_cities_en[inbound_flight_destination_code]
+                inbound_flight_destination_name_ru = cities_en_to_ru[inbound_flight_destination_name_en]
 
-                response += f"Маршрут туда: {outbound_flight.origin} - {outbound_flight.destination}\nАвиакомпания: {outbound_flight.airline}\nДата: {outbound_flight.departure_date.date()}\nЦена: {outbound_flight.price}\n\n"
-                response += f"Маршрут назад: {inbound_flight.origin} - {inbound_flight.destination}\nАвиакомпания: {inbound_flight.airline}\nДата: {inbound_flight.departure_date.date()}\nЦена: {inbound_flight.price}\n\n\n"
+                response += f"Маршрут туда: {outbound_flight_origin_name_ru} ({outbound_flight.origin}) - {outbound_flight_destination_name_ru} ({outbound_flight.destination})\nАвиакомпания: {outbound_flight.airline}\nДата: {outbound_flight.departure_date.date()}\nЦена: {outbound_flight.price}\n\n"
+                response += f"Маршрут назад: {inbound_flight_origin_name_ru} ({inbound_flight.origin}) - {inbound_flight_destination_name_ru} ({inbound_flight.destination})\nАвиакомпания: {inbound_flight.airline}\nДата: {inbound_flight.departure_date.date()}\nЦена: {inbound_flight.price}\n\n\n"
 
             await message.answer(response)
 

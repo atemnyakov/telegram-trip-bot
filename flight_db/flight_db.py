@@ -2,7 +2,7 @@ import copy
 import json
 import os
 from datetime import datetime, timedelta
-from typing import Set, Tuple, Dict, Optional
+from typing import Set, Tuple, Dict, Optional, List
 from currency_converter import CurrencyConverter
 from ryanair import Ryanair
 from wizzair import Wizzair
@@ -177,7 +177,7 @@ class Flight:
 class FlightDB:
     def __init__(self, path: str = os.path.join(os.path.dirname(__file__), "out")):
         self.path: str = path
-        self.airport_codes: Dict[str, Set[str]] = dict()
+        self.airport_codes: Dict[str, List[str]] = dict()
         self.flights: Set[Flight] = set()
         self.ryanair = Ryanair()
         self.wizzair = Wizzair()
@@ -197,8 +197,8 @@ class FlightDB:
 
         try:
             with open(full_path, "r", encoding="utf-8") as f:
-               loaded_dict = json.load(f)
-               self.airport_codes = {k: set(v) for k, v in loaded_dict.items()}
+                loaded_dict = json.load(f)
+                self.airport_codes = {k: set(v) for k, v in loaded_dict.items()}
 
             return True
         except:
@@ -214,10 +214,16 @@ class FlightDB:
         for airport_ryr in airports_ryr:
             self.airport_codes.setdefault(airport_ryr.code, set()).add(airport_ryr.name)
 
-    def get_airport_code(self, city_name: str) -> Optional[str]:
-        for current_airport_code, current_city_names in self.airport_codes.items():
-            if city_name in current_city_names:
+    def get_airport_code(self, airport_name: str) -> Optional[str]:
+        for current_airport_code, current_airport_names in self.airport_codes.items():
+            if airport_name in current_airport_names:
                 return current_airport_code
+        return None
+
+    def get_airport_name(self, airport_code: str) -> Optional[str]:
+        for current_airport_code, current_airport_names in self.airport_codes.items():
+            if airport_code == current_airport_code:
+                return current_airport_names[0] if len(current_airport_names) > 0 else None
         return None
 
     def save_flights(self) -> None:
