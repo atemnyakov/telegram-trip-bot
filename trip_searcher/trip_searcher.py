@@ -157,6 +157,12 @@ class TripSearcher:
                         codes_to_cities_en[airport_code] = airport_name
                         cities_en_to_codes[airport_name] = airport_code
 
+                        if airport_name not in cities_en_to_ru:
+                            airport_name_ru = self.city_db.translate_city_name(city_name=airport_name, target_language_code='ru')
+                            if airport_name_ru:
+                                cities_ru_to_en[airport_name_ru] = airport_name
+                                cities_en_to_ru[airport_name] = airport_name_ru
+
         result = {"round_trips": round_trips, "cities_ru_to_en": cities_ru_to_en, "cities_en_to_ru": cities_en_to_ru,
                   "codes_to_cities_en": codes_to_cities_en, "cities_en_to_codes": cities_en_to_codes}
 

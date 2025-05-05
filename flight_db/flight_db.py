@@ -198,21 +198,18 @@ class FlightDB:
         try:
             with open(full_path, "r", encoding="utf-8") as f:
                 loaded_dict = json.load(f)
-                self.airport_codes = {k: set(v) for k, v in loaded_dict.items()}
+                self.airport_codes = {k: list(v) for k, v in loaded_dict.items()}
 
             return True
         except:
             return False
 
     def fetch_airport_codes(self):
-        destinations_wzz, connections_wzz = self.wizzair.get_map()
-
-        for destination_wzz in destinations_wzz:
-           self.airport_codes.setdefault(destination_wzz.code, set()).add(destination_wzz.name)
-
-        airports_ryr = self.ryanair.get_airports()
-        for airport_ryr in airports_ryr:
-            self.airport_codes.setdefault(airport_ryr.code, set()).add(airport_ryr.name)
+        for airports in [self.wizzair.get_map()[0], self.ryanair.get_airports()]:
+            for airport in airports:
+                airport_list = self.airport_codes.setdefault(airport.code, [])
+                if airport.name not in airport_list:
+                    airport_list.append(airport.name)
 
     def get_airport_code(self, airport_name: str) -> Optional[str]:
         for current_airport_code, current_airport_names in self.airport_codes.items():
@@ -457,5 +454,5 @@ if __name__ == '__main__':
 
     # flight_db.fetch_airport_codes()
     flight_db.load_airport_codes()
-    flight_db.fetch_airport_codes()
+    # flight_db.fetch_airport_codes()
     flight_db.save_airport_codes()

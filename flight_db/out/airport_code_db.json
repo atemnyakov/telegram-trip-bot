@@ -6,8 +6,7 @@
         "Yerevan"
     ],
     "VIE": [
-        "Vienna",
-        "Vienna\r\n"
+        "Vienna"
     ],
     "GYD": [
         "Baku"
@@ -28,8 +27,8 @@
         "Tuzla"
     ],
     "BOJ": [
-        "Burgas",
-        "Bourgas (Black Sea)"
+        "Bourgas (Black Sea)",
+        "Burgas"
     ],
     "PDV": [
         "Plovdiv"
@@ -38,8 +37,8 @@
         "Sofia"
     ],
     "VAR": [
-        "Varna",
-        "Varna (Black Sea)"
+        "Varna (Black Sea)",
+        "Varna"
     ],
     "DBV": [
         "Dubrovnik"
@@ -69,10 +68,10 @@
         "Hurghada"
     ],
     "RMF": [
-        "Marsa Alam\r\n"
+        "Marsa Alam"
     ],
     "SSH": [
-        "Sharm El Sheikh\r\n"
+        "Sharm El Sheikh"
     ],
     "HMB": [
         "Sohag "
@@ -90,7 +89,7 @@
         "Grenoble"
     ],
     "LYS": [
-        "Lyon\r\n"
+        "Lyon"
     ],
     "NCE": [
         "Nice"
@@ -108,8 +107,7 @@
         "Kutaisi"
     ],
     "BER": [
-        "Berlin Brandenburg",
-        "Berlin Brandenburg\r\n"
+        "Berlin Brandenburg"
     ],
     "DTM": [
         "Dortmund"
@@ -124,15 +122,15 @@
         "Hamburg"
     ],
     "FKB": [
-        "Karlsruhe / Baden-Baden",
-        "Karlsruhe/Baden-Baden"
+        "Karlsruhe/Baden-Baden",
+        "Karlsruhe / Baden-Baden"
     ],
     "LEJ": [
         "Leipzig"
     ],
     "FMM": [
-        "Memmingen",
-        "Memmingen / Munich West"
+        "Memmingen / Munich West",
+        "Memmingen"
     ],
     "NUE": [
         "Nuremberg ",
@@ -142,12 +140,11 @@
         "Stuttgart"
     ],
     "ATH": [
-        "Athens",
-        "Athens\r\n"
+        "Athens"
     ],
     "CHQ": [
-        "Chania",
-        "Chania (Crete)"
+        "Chania (Crete)",
+        "Chania"
     ],
     "CFU": [
         "Corfu"
@@ -166,7 +163,6 @@
         "Santorini"
     ],
     "JSI": [
-        "Skiathos\r\n",
         "Skiathos"
     ],
     "SKG": [
@@ -185,8 +181,8 @@
         "Reykjavik"
     ],
     "TLV": [
-        "Tel Aviv",
-        "Tel-Aviv"
+        "Tel-Aviv",
+        "Tel Aviv"
     ],
     "AHO": [
         "Alghero (Sardinia)",
@@ -240,39 +236,34 @@
         "Pescara"
     ],
     "PSA": [
-        "Pisa",
-        "Pisa (Tuscany)"
+        "Pisa (Tuscany)",
+        "Pisa"
     ],
     "RMI": [
-        "Rimini",
-        "Rimini\r\n"
+        "Rimini"
     ],
     "ROM": [
-        "Rome (Any)",
-        "Rome"
+        "Rome (Any)"
     ],
     "CIA": [
-        "Rome Ciampino",
-        "Rome"
+        "Rome Ciampino"
     ],
     "FCO": [
-        "Rome Fiumicino",
-        "Rome"
+        "Rome Fiumicino"
     ],
     "QSR": [
         "Salerno (Naples)",
         "Salerno Costa d'Amalfi"
     ],
     "TRS": [
-        "Trieste",
-        "Trieste\r\n"
+        "Trieste"
     ],
     "TRN": [
         "Turin"
     ],
     "VCE": [
-        "Venice M.Polo",
-        "Venice"
+        "Venice",
+        "Venice M.Polo"
     ],
     "VEN": [
         "Venice (Any)"
@@ -284,14 +275,13 @@
         "Verona"
     ],
     "AMM": [
-        "Amman Jordan",
-        "Amman\r\n"
+        "Amman Jordan"
     ],
     "ALA": [
         "Almaty "
     ],
     "NQZ": [
-        "Astana\r\n"
+        "Astana"
     ],
     "HSA": [
         "Turkistan"
@@ -300,7 +290,7 @@
         "Prishtina"
     ],
     "FRU": [
-        "Bishkek\r\n"
+        "Bishkek"
     ],
     "RIX": [
         "Riga"
@@ -327,8 +317,7 @@
         "Agadir"
     ],
     "RAK": [
-        "Marrakesh",
-        "Marrakesh\r\n"
+        "Marrakesh"
     ],
     "EIN": [
         "Eindhoven"
@@ -352,27 +341,27 @@
         "Haugesund"
     ],
     "OOS": [
-        "Oslo (Any)\r\n"
+        "Oslo"
     ],
     "OSL": [
-        "Oslo",
-        "Oslo Gardermoen"
+        "Oslo Gardermoen",
+        "Oslo"
     ],
     "TRF": [
-        "Oslo Torp",
-        "Oslo Sandefjord Torp"
+        "Oslo Sandefjord Torp",
+        "Oslo Torp"
     ],
     "SVG": [
         "Stavanger"
     ],
     "TOS": [
-        "Tromso\r\n"
+        "Tromso"
     ],
     "TRD": [
         "Trondheim"
     ],
     "SLL": [
-        "Salalah\r\n"
+        "Salalah"
     ],
     "GDN": [
         "Gdansk"
@@ -381,7 +370,7 @@
         "Katowice"
     ],
     "KRK": [
-        "Kraków\r\n",
+        "Kraków",
         "Krakow"
     ],
     "LUZ": [
@@ -394,8 +383,8 @@
         "Radom"
     ],
     "RZE": [
-        "Rzeszow",
-        "Rzeszów\r\n"
+        "Rzeszów",
+        "Rzeszow"
     ],
     "SZZ": [
         "Szczecin"
@@ -411,8 +400,8 @@
         "Faro"
     ],
     "FNC": [
-        "Madeira Funchal",
-        "Funchal (Madeira)"
+        "Funchal (Madeira)",
+        "Madeira Funchal"
     ],
     "LIS": [
         "Lisbon"
@@ -427,15 +416,18 @@
         "Brasov"
     ],
     "OTP": [
-        "Bucharest",
-        "Bucharest "
+        "Bucharest ",
+        "Bucharest"
+    ],
+    "BUH": [
+        "Bucharest Any"
     ],
     "BBU": [
         "Bucharest Baneasa"
     ],
     "CLJ": [
-        "Cluj",
-        "Cluj-Napoca"
+        "Cluj-Napoca",
+        "Cluj"
     ],
     "CND": [
         "Constanta"
@@ -465,7 +457,7 @@
         "Dammam"
     ],
     "JED": [
-        "Jeddah\r\n"
+        "Jeddah"
     ],
     "MED": [
         "Medina (Madinah)"
@@ -494,8 +486,8 @@
         "Alicante"
     ],
     "BCN": [
-        "Barcelona",
-        "Barcelona El Prat"
+        "Barcelona El Prat",
+        "Barcelona"
     ],
     "GRO": [
         "Barcelona Girona"
@@ -511,7 +503,7 @@
         "Fuerteventura"
     ],
     "LPA": [
-        "Gran Canaria (Canary Islands)\r\n",
+        "Gran Canaria (Canary Islands)",
         "Gran Canaria"
     ],
     "IBZ": [
@@ -533,8 +525,8 @@
         "Seville"
     ],
     "TFS": [
-        "Tenerife South",
-        "Tenerife (Canary Islands)"
+        "Tenerife (Canary Islands)",
+        "Tenerife South"
     ],
     "VLC": [
         "Valencia"
@@ -560,8 +552,8 @@
         "Stockholm Skavsta"
     ],
     "BSL": [
-        "Basel",
-        "Basel-Mulhouse-Freiburg"
+        "Basel-Mulhouse-Freiburg",
+        "Basel"
     ],
     "AYT": [
         "Antalya"
@@ -570,13 +562,13 @@
         "Dalaman"
     ],
     "IST": [
-        "Istanbul\r\n"
+        "Istanbul"
     ],
     "AUH": [
         "Abu Dhabi"
     ],
     "DXB": [
-        "Dubai \r\n"
+        "Dubai"
     ],
     "ABZ": [
         "Aberdeen"
@@ -588,8 +580,8 @@
         "Glasgow"
     ],
     "LBA": [
-        "Leeds Bradford",
-        "Leeds"
+        "Leeds",
+        "Leeds Bradford"
     ],
     "LPL": [
         "Liverpool"
